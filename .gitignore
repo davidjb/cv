@@ -1,4 +1,3 @@
-resume.json
 *.swp
 *.pyc
 *.pyo
@@ -21,3 +20,4 @@ var/
 include/
 lib/
 local/
+output/
