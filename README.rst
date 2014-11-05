@@ -32,7 +32,7 @@ host, GitHub Pages::
 
     python bootstrap.py
     ./bin/buildout
-    ./build.sh
+    ./bin/build-cv
 
 This will automatically push and import to GitHub Pages using ``ghp-import``,
 so you can go ahead and view the resulting page at http://davidjb.com/cv.
