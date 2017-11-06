@@ -1,0 +1,161 @@
+basics:
+  name: David James Beitey
+  label: DevOps, Sys Admin and all things IT
+  picture: 'https://rawgit.com/davidjb/cv/master/me.jpg'
+  email: hi@davidjb.com
+  website: http://davidjb.com
+  location:
+    address: ''
+    city: Townsville
+    countryCode: AU
+    postalCode: QLD 4814
+    region: Queensland
+  picture: ''
+  profiles:
+    - network: GitHub
+      url: https://git.io/djb
+      username: davidjb
+    - network: Twitter
+      url: https://twitter.com/davidjb_
+      username: davidjb_
+    - network: Resumé | CV
+      url: https://github.com/davidjb/cv
+      username: Open source
+  summary: >
+    David is an experienced web developer and project manager, specialising in
+    open source and customised applications.  With a client-driven focus, David
+    applies specialised knowledge of web technologies and security protocols to
+    his practices, including development, system administration and end-user
+    support.
+
+    He is passionate about users and the end-user experience, open source
+    software development, Linux and Python programming, though his skills
+    extend to numerous other aspects of technology. David contributes back to
+    the community with open-source software, as well fostering local interest
+    in entrepreneurship, programming and IT.
+skills:
+  - name: Web Development
+    level: Expert
+    keywords:
+      - JavaScript (Node.js, Vanilla)
+      - Python frameworks (Pyramid)
+      - Content Management Systems (CMS; Plone/Squiz)
+      - HTML/CSS/SASS
+  - name: Applications & Deployment
+    level: Expert
+    keywords:
+      - Configuration management (Vagrant, SaltStack)
+      - Web application hosting
+      - Cloud hosting (Amazon AWS, OpenStack)
+      - Version control (Git/SVN)
+  - name: Programming
+    level: Expert
+    keywords:
+      - Python/JavaScript/Node.js
+      - Documentation writing & frameworks
+      - Open source development
+      - Version control & management
+  - name: System Administration
+    level: Expert
+    keywords:
+      - End-user support
+      - Linux (RedHat, Debian, Ubuntu)
+      - Server configuration
+      - Automated systems management
+      - Web servers (Nginx, Apache)
+  - name: Security
+    level: Expert
+    keywords:
+      - Web security (HTTPS, JWT)
+      - Shibboleth (SSO / SAML)
+      - Server configuration
+      - Testing and analysis
+work:
+  - company: James Cook University
+    position: Full-stack Developer (Online Technologies Manager)
+    startDate: '2007-07-01'
+    #endDate:
+    highlights:
+      - Lead developer of numerous University online projects (jcu.me,
+        Research@JCU, JCU Journals)
+      - Lead dev of the JCU Web Framework
+      - CMS integration
+      - Project manager and developer of eSpaces.edu.au
+      - Technical operations for eResearch Centre
+      - Project lead on various open source projects
+      - User support and system administrator for research systems
+    summary: >
+      Full-stack deployment, support, web application and system administration
+    website: https://www.jcu.edu.au
+awards:
+  - awarder: James Cook University
+    date: '2013-12-01'
+    title: Staff Excellence Award
+    summary: >
+      Awarded for lead development of the JCU Research Portfolio (jcu.me), an
+      interactive web profile for all researchers at the University.
+education:
+  - area: Information Technology
+    institution: James Cook University
+    startDate: '2008-01-01'
+    endDate: '2008-12-31'
+    gpa: Class 1
+    studyType: Honours
+  - area: Information Technology
+    institution: James Cook University
+    startDate: '2005-01-01'
+    endDate: '2007-12-31'
+    gpa: '6.83'
+    studyType: Bachelors
+volunteer:
+  - organization: Startup Townsville
+    startDate: '2015-09-01'
+    #endDate:
+    position: Organiser & Treasurer
+    highlights:
+      - Organiser for Townsville Startup Weekend 2016 & 2015
+      - Meetup organiser
+      - Group treasurer
+      - Technical support
+    summary: >
+      Local volunteer organisation dedicated to fostering entrepreneurship in
+      North Queensland.
+    website: http://startuptownsville.com.au
+  - organization: ICT Professionals in Schools
+    startDate: '2015-10-01'
+    endDate: '2017-01-01'
+    position: St Margaret Mary's College
+    highlights:
+      - Volunteer IT professional in school
+      - Technical support to teachers
+      - Course planning and assistance
+    summary: >
+      CSIRO-run program for connecting volunteer ICT professionals to
+      local schools and teachers.
+    website: http://www.scientistsinschools.edu.au/ict/
+interests:
+  - name: Technology
+    keywords:
+      - User Experience
+      - Open source
+      - Web development
+      - Node.js, Python, all languages
+      - Innovation & startups
+      - Automation
+      - Security
+  - name: Home & Garden
+    keywords:
+      - Roses
+      - Fruiting trees & plants
+      - Cooking
+      - DIY
+languages:
+  - language: English
+    fluency: Native speaker
+#references:
+#  - name: Professor Ian Atkinson
+#    reference: |-
+#      Reference coming soon.
+#  - name: Dr Jeremy Vanderwal
+#    reference: |-
+#      Reference coming soon.
