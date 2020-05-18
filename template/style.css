@@ -24,10 +24,19 @@ h2 {
   color: #d28200;
 }
 
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  .h3 {
+    font-size: 1rem;
+  }
+}
+
 @media (min-width: 768px) {
   section {
-    margin-bottom: 2rem;
-    padding-bottom: 2rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 
   h2 {
@@ -78,7 +87,8 @@ h3 span:first-child {
 li {
   list-style: none;
 }
-li:before {
+
+li::before {
   content: "\f052";
   float: left;
   font: 13px Octicons;
@@ -104,6 +114,10 @@ li > p {
 
 .profile .network {
   text-transform: uppercase;
+}
+
+.about {
+  line-height: 1.2;
 }
 
 .work,
@@ -157,7 +171,7 @@ li > p {
   }
 }
 
-.education .area:before {
+.education .area::before {
   content: "\f0d7";
   font: 2rem Octicons;
   margin-right: 0.5rem;
@@ -167,34 +181,12 @@ li > p {
   margin-left: 1.5rem;
 }
 
-.publication .website a:before {
+.publication .website a::before {
   content: "View publication";
 }
 
 @media (min-width: 768px) {
-  #publications .website a:before {
+  #publications .website a::before {
     content: attr(href);
   }
-}
-
-/* Old */
-@media (max-width: 480px) {
-  h1 {
-    font-size: 1.5rem;
-  }
-  .h3 {
-    font-size: 1rem;
-  }
-  /*
-  .date {
-    font-size: 14px;
-    margin-bottom: 5px;
-  }
-  .strike-through span:first-child {
-    margin-bottom: 7px;
-  }
-  .strike-through span {
-    display: block;
-  } 
-  */
 }
