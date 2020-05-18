@@ -1,0 +1,10 @@
+{
+  "name": "jsonresume-theme-davidjb",
+  "version": "0.1.0",
+  "description": "iheme for JSON Resume",
+  "author": "djb",
+  "license": "MIT",
+  "dependencies": {
+    "handlebars": "^4.7.6"
+  }
+}

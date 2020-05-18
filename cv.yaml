@@ -1,53 +1,48 @@
 basics:
-  name: David James Beitey
-  label: DevOps, Sys Admin and all things IT
-  picture: 'https://rawgit.com/davidjb/cv/master/me.jpg'
-  email: hi@davidjb.com
-  website: http://davidjb.com
+  name: David Beitey
+  label: Full-stack dev, DevOps, Sys Admin and all things IT
+  picture: 'https://github.com/davidjb/cv/raw/master/me.jpg'
+  email: consulting@davidjb.com
+  website: https://davidjb.com
   location:
     address: ''
     city: Townsville
     countryCode: AU
     postalCode: QLD 4814
     region: Queensland
-  picture: ''
   profiles:
     - network: GitHub
-      url: https://git.io/djb
-      username: davidjb
+      url: https://github.com/davidjb
+      username: @davidjb
     - network: Twitter
       url: https://twitter.com/davidjb_
-      username: davidjb_
-    - network: Resumé | CV
-      url: https://github.com/davidjb/cv
-      username: Open source
-  summary: >
-    David is an experienced web developer and project manager, specialising in
-    open source and customised applications.  With a client-driven focus, David
-    applies specialised knowledge of web technologies and security protocols to
-    his practices, including development, system administration and end-user
-    support.
+      username: @davidjb_
+  summary: |
+    David is an experienced full-stack web developer and project manager, specialising in open source and customised applications.  With a client-driven focus, David applies specialised knowledge of web technologies and IT security to his work, including frontend and backend development, UI design, system administration, operations and end-user support.
 
-    He is passionate about users and the end-user experience, open source
-    software development, Linux and Python programming, though his skills
-    extend to numerous other aspects of technology. David contributes back to
-    the community with open-source software, as well fostering local interest
-    in entrepreneurship, programming and IT.
+    He is passionate about users, creating engaging user experiences (UX), open source software development, JavaScript, Python and Linux. His skills extend to other languages and various aspects of technology, being able to adapt to unseen (and challenging) development environments.
+
+    David's personal strengths are his attention to detail, holistic approaches to problem solving and professional integrity.  He believes in openness and honesty, advocating in the best interests of users  and fostering the community around information technology; he is an organiser of the local developers' group.
+
+    He once fixed a $1m electron microscope by recovering a Solaris hard drive bit-by-bit (literally).
 skills:
   - name: Web Development
     level: Expert
     keywords:
-      - JavaScript (Node.js, Vanilla)
-      - Python frameworks (Pyramid)
-      - Content Management Systems (CMS; Plone/Squiz)
-      - HTML/CSS/SASS
+      - JavaScript (particularly Node.js, React, Vanilla)
+      - Python frameworks (particularly Django, Pyramid)
+      - HTML/CSS/SCSS
+      - UI and UX Design
+      - Websites and CMS (Wordpress/Plone/Squiz Matrix)
+
   - name: Applications & Deployment
     level: Expert
     keywords:
       - Configuration management (Vagrant, SaltStack)
       - Web application hosting
       - Cloud hosting (Amazon AWS, OpenStack)
-      - Version control (Git/SVN)
+      - Hardware-centric systems and environmental sensor platforms
+
   - name: Programming
     level: Expert
     keywords:
@@ -55,73 +50,286 @@ skills:
       - Documentation writing & frameworks
       - Open source development
       - Version control & management
+
   - name: System Administration
     level: Expert
     keywords:
-      - End-user support
       - Linux (RedHat, Debian, Ubuntu)
       - Server configuration
+      - Embedded devices
       - Automated systems management
       - Web servers (Nginx, Apache)
+      - End-user support
+
   - name: Security
-    level: Expert
+    level: Proficient
     keywords:
       - Web security (HTTPS, JWT)
-      - Shibboleth (SSO / SAML)
+      - Authentication (Shibboleth, OIDC, SSO)
       - Server configuration
-      - Testing and analysis
+      - Testing and risk analysis
+
 work:
+  - company: David Beitey Consulting
+    website: https://davidjb.com
+    position: Proprietor
+    startDate: '2017'
+    #endDate:
+    highlights:
+      - Independent IT project consulting
+      - Rapid web application development
+      - Training, user support
+
   - company: James Cook University
-    position: Full-stack Developer (Online Technologies Manager)
-    startDate: '2007-07-01'
+    website: https://eresearch.jcu.edu.au
+    position: Full-stack Developer (Online Technologies Manager), eResearch Centre
+    startDate: '2014-05-31'
     #endDate:
     highlights:
       - Lead developer of numerous University online projects (jcu.me,
         Research@JCU, JCU Journals)
       - Lead dev of the JCU Web Framework
       - CMS integration
-      - Project manager and developer of eSpaces.edu.au
       - Technical operations for eResearch Centre
       - Project lead on various open source projects
       - User support and system administrator for research systems
+      - PM
+      - Classroom on the Reef, Outback
+      - RI websites and portals
+      - Lead consulting role on eResearch Centre projects
+      - University-wide data management review
+      - Shibboleth integration with Nginx webserver (world first)
+      - ORCID iD Linker
+      - Project manager on Advanced Standing Credit Calculator project
+      - Research Infrastructure ()
     summary: >
       Full-stack deployment, support, web application and system administration
+
+  - company: James Cook University
+    website: https://eresearch.jcu.edu.au
+    position: Web Development Manager, eResearch Centre
+    startDate: '2011-05-02'
+    endDate: '2014-05-31'
+    highlights:
+      - Lead developer of JCU Research Portfolio (https://jcu.me)
+      - Project manager and developer of eSpaces.edu.au (collaborative workspaces with federated access to all researchers from  Australia and New Zealand)
+      - Project manager and developer of acclaim.edu.au (secure medical examiner portal)
+      - DevOps for various CMS-based member portals (IUCN Climate Change panel, Cyclone Testing Station, Tropical Data Hub)
+      - JCU Journals hosting - joint project with JCU Library
+      - Delivered Projects include Australian research platforms  (eSpaces.edu.au, eGRS)
+      - >
+        DevOps of customised research tools
+        ([AgMudmap.org](https://web.archive.org/web/20180903030036/https://agmudmap.org/),
+        [TerrestrialClimateChange.org.au](https://web.archive.org/web/20200518020905/https://terrestrialclimatechange.org.au/),
+        [IUCN Climate Change Specialist Group](https://web.archive.org/web/20200518020840/https://iucn-ccsg.org/))
+      - VecNet
+    summary: >
+
+  - company: James Cook University
     website: https://www.jcu.edu.au
+    position: System Administrator, Discipline of Information Technology
+    startDate: '2010-01-01'
+    endDate: '2011-05-01'
+    highlights:
+      - Creation of University-wide feedback application ("JCU Words")
+      - Full time,
+      - Delivered Projects include Australian research platforms  (eSpaces.edu.au, eGRS)
+    summary: >
+      Something
+
+  - company: James Cook University
+    website: https://www.jcu.edu.au
+    position: Project Officer, School of Mathematics, Physics and IT
+    startDate: '2008-12-03'
+    endDate: '2009-12-31'
+    highlights:
+      - Created Plone CMS-based staff portals for JCU schools and faculty staff
+      - Developed collaborative portals for University of Queensland researchers (SCORe, QFAB)
+      - Stand-alone, web-based interactive research tools
+    summary: >
+      Something
+
+  - company: ARCHER Project
+    website: https://archer.edu.au
+    position: APAC Project Assistant
+    startDate: '2007-09-17'
+    endDate: '2008-12-02'
+    highlights:
+      - Delivered nationally-utilised Australian research platforms
+      - IT developer using Plone-based collaborative workspace technology
+        (Python, JavaScript, HTML, CSS)
+      - System operations within RedHat Linux and CentOS environments
+      - User support and requirements gathering
+      - Operator of room-based AccessGrid and video conferencing tools
+    summary: >
+      The Australian Researcher Enabling Environment (ARCHER) project produced
+      software tools to enable Australian researchers to collect, store and
+      securely share data with collaborators. The project also supported
+      generalised research software tools such as those for communication,
+      search, replication and backup and electronic publication, providing
+      access on a national scale.
+
+# Types consist of 'volunteering', 'presentation', 'talk', 'application', 'conference'
+projects:
+  - type: application
+    name: LiXiA React Prototype & Website
+    entity: LiXiA Living Infrastructure
+    url: https://lixia.com.au
+    startDate: '2019-07-24'
+    endDate: '2020-01-02'
+    description: >
+      Creation of rapidly-prototyped React-based tablet interface for
+      interacting with proprietary sensor platform and, separately, a modern,
+      responsive website for the company
+    highlights:
+      - React & JavaScript programming
+      - Startup bootstrapping (domain, website, email)
+      - Wordpress development
+    roles:
+      - Lead developer
+
+  - type: talk
+    name: Software Review & Workshop
+    entity: Food Rescue Initiative
+    url: https://foodrescuetownsville.com/
+    startDate: '2016-06-13'
+    endDate: '2016-07-12'
+    highlights:
+      - Open source software review & testing
+      - Presentation preparation & delivery
+      - Focus group leader
+    roles:
+      - Workshop facilitator
+
 awards:
+  - awarder: James Cook University
+    date: '2019-10-22'
+    title: TropEco Sustainable Campuses Award – Winner
+    summary: >
+      For development and implementation of an eWaste recovery strategy after
+      significant value was identified in eWaste that was previously sent for
+      recycling.  A systematic process was developed at the university level to
+      ensure recovered equipment is repurposed by staff, students and community
+      groups resulting in over $12,000 of equipment recovered and reused to
+      date.
+
+  - awarder: James Cook University
+    date: '2019-10-22'
+    title: TropEco Excellence Award - Staff – Highly Commended
+    summary: >
+      Awarded for efforts in developing an e-waste reuse program at JCU
+
+  - awarder: TropEco, James Cook University
+    date: '2019-10-22'
+    title: Green Impact – Highest Scoring Team
+    summary: >
+      Team OIC (Oh, I Compost) successfully re-purposed discarded eWaste,
+      acquired a team bicycle to get around on campus, shared home-grown
+      produce between staff members, greatly improved their area’s recycling,
+      including producing a highly instructional video on putting the right
+      thing in the right bin (https://youtu.be/9JLb91c4Lww).
+
+  - awarder: Division of Student Life, James Cook University
+    date: '2018-12-01'
+    title: Friends of Student Life Award
+    summary: >
+      The JCU Credit Calculator offers students the ability to recive credit
+      (advanced standing) for studies completed at other institutions. The
+      previous version of this software was hard to use, required days of
+      manual data entry by administrators and was extremely expensive. The
+      eResearch Centre built a modern React-based, fit-for-purpose tool that
+      integrated automatically with other University systems, delivering a flowing,
+      engaging user experince – built and delivered for less than a tenth of
+      the cost of running the previous system for a single year.
+
+  - awarder: Advance Queensland
+    date: '2016-06-01'
+    title: Community Digital Champion
+    summary: >
+      Chosen as a Digital Champion for work in the digital and entrepreneurship
+      spaces to share knowledge and experiences with the local community.
+
   - awarder: James Cook University
     date: '2013-12-01'
     title: Staff Excellence Award
     summary: >
       Awarded for lead development of the JCU Research Portfolio (jcu.me), an
       interactive web profile for all researchers at the University.
+
 education:
-  - area: Information Technology
-    institution: James Cook University
+  - institution: James Cook University
+    area: Bachelor of Information Technology (Honours)
     startDate: '2008-01-01'
     endDate: '2008-12-31'
     gpa: Class 1
-    studyType: Honours
-  - area: Information Technology
-    institution: James Cook University
+
+  - institution: James Cook University
+    area: Bachelor of Information Technology
     startDate: '2005-01-01'
     endDate: '2007-12-31'
     gpa: '6.83'
-    studyType: Bachelors
+
 volunteer:
-  - organization: Startup Townsville
+  - organization: DevNQ
+    website: https://devnq.org
+    startDate: '2016-05-12'
+    #endDate:
+    position: Treasurer, Organiser & Member
+    summary: >
+      North Queensland’s software development community, bringing together
+      people of different backgrounds through events, mentoring, workshops and
+      more in Townsville, Queensland, Australia.
+    highlights:
+      - Group treasurer since 2019
+      - Member of organising committee since 2018
+      - Open governance author & contributor
+      - Regular event presenter
+
+  - organization: Young ICT Explorers
+    website: https://www.youngictexplorers.net.au/
     startDate: '2015-09-01'
     #endDate:
+    position: Age Category Judge
+    summary: >
+      Non-profit competition encouraging school students to create their best
+      ICT-related projects. Students present in groups to panels of judges to
+      receive mentoring and assessment as part of the competition.
+    highlights:
+      - Interviewing & mentoring school students
+      - Juding of ICT project entries
+
+  - organization: MixHaus
+    website: http://www.mixhaus.com.au
+    startDate: '2015-12-16'
+    endDate: '2016-12-31'
+    position: Volunteer
+    highlights:
+      - Construction of the MixHaus mobile makerspace (shipping container)
+      - Contributions to design and inclusions in the workshop
+      - Workshop participant and community champion
+    summary: >
+      MixHaus is a community-operated mobile hacker-maker space for the
+      Townsville community. A team of people from local institutions
+      collaborated to design and build the space inside a shipping container,
+      creating a transportable ‘pop-up’ maker space for running community
+      workshops.
+
+  - organization: Startup Townsville
+    website: http://startuptownsville.com.au
+    startDate: '2015-09-01'
+    endDate: '2019-01-01'
     position: Organiser & Treasurer
     highlights:
-      - Organiser for Townsville Startup Weekend 2016 & 2015
+      - Organiser for Townsville Startup Weekend 2015 & 2016
       - Meetup organiser
       - Group treasurer
       - Technical support
     summary: >
       Local volunteer organisation dedicated to fostering entrepreneurship in
       North Queensland.
-    website: http://startuptownsville.com.au
+
   - organization: ICT Professionals in Schools
+    website: http://www.scientistsinschools.edu.au/ict/
     startDate: '2015-10-01'
     endDate: '2017-01-01'
     position: St Margaret Mary's College
@@ -132,30 +340,32 @@ volunteer:
     summary: >
       CSIRO-run program for connecting volunteer ICT professionals to
       local schools and teachers.
-    website: http://www.scientistsinschools.edu.au/ict/
+
 interests:
   - name: Technology
     keywords:
-      - User Experience
       - Open source
-      - Web development
       - Node.js, Python, all languages
-      - Innovation & startups
-      - Automation
       - Security
-  - name: Home & Garden
+      - UX/UI
+      - Web development
+      - Innovation & startups
+      - Home automation
+  - name: Personal
     keywords:
-      - Roses
+      - Rose gardening
       - Fruiting trees & plants
       - Cooking
       - DIY
+
 languages:
   - language: English
     fluency: Native speaker
-#references:
-#  - name: Professor Ian Atkinson
-#    reference: |-
-#      Reference coming soon.
-#  - name: Dr Jeremy Vanderwal
-#    reference: |-
-#      Reference coming soon.
+
+references:
+  - name: Professor Ian Atkinson
+    reference: |-
+      Reference coming soon.
+  - name: Marianne Brown
+    reference: |-
+      Reference coming soon.

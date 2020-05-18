@@ -1,0 +1,170 @@
+/* Backport https://github.com/twbs/bootstrap/pull/29198 */
+a {
+ color: #0d6efd;
+}
+
+.container {
+  max-width: 960px;
+}
+
+section {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 2rem;
+}
+
+section:last-child {
+  border-bottom: 0 none;
+}
+
+h2 {
+  padding-right: 2rem;
+  font-size: 2rem;
+  color: #d28200;
+}
+
+@media (min-width: 768px) {
+  h2 {
+    text-align: right;
+  }
+}
+
+h3 span:first-child {
+  font-weight: bold;
+}
+
+@media (min-width: 480px) {
+  .strike-through {
+    border-top: 1px solid #ccc;
+    margin-top: 1rem;
+    margin-bottom: -1rem;
+    position: relative;
+  }
+  .strike-through span,
+  .strike-through a {
+    background: #fff;
+    display: inline-block;
+    transform: translateY(-50%);
+  }
+  .strike-through span:first-child {
+    padding-right: 1rem;
+  }
+  .strike-through span + span {
+    position: absolute;
+    right: 0;
+    font-size: 14px;
+    padding-left: 1rem;
+  }
+}
+
+.summary {
+  margin-top: 0.5rem;
+}
+
+li {
+  list-style: none;
+}
+li:before {
+  content: "\f052";
+  float: left;
+  font: 13px Octicons;
+  margin-top: 6px;
+  margin-left: -20px;
+  opacity: .3;
+  position: absolute;
+}
+
+li > p {
+  margin-bottom: 0;
+}
+
+.profile {
+  margin-bottom: 1rem;
+}
+
+.profile .network {
+  text-transform: uppercase;
+}
+
+.work,
+.project,
+.volunteer,
+.education,
+.award,
+.publication,
+.skills {
+  margin-bottom: 1.5rem;
+}
+
+.work:last-child,
+.project:last-child,
+.volunteer:last-child,
+.education:last-child,
+.award:last-child,
+.publication:last-child {
+  margin-bottom: 0;
+}
+
+.reference {
+  border-left: 5px solid #e7e9ec;
+  padding-left: 1rem;
+}
+
+#work .position,
+#volunteer .position {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+#education .area {
+  font-weight: bold;
+}
+#education .area:before {
+  content: "\f0d7";
+  font: 2rem Octicons;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+#education .studyType {
+  margin-left: 1.5rem;
+}
+
+/* Old */
+#publications .website a:before {
+  content: attr(href);
+}
+
+@media (max-width: 768px) {
+  .col-sm-6:last-child {
+    margin-bottom: 0px;
+  }
+  #content aside {
+    margin-bottom: 20px;
+    padding-right: 0;
+    text-align: left;
+  }
+  #publications .website a:before {
+    content: "View publication";
+  }
+}
+@media (max-width: 480px) {
+  h1 {
+    font-size: 26px;
+  }
+  .date {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  .strike-through span:first-child {
+    margin-bottom: 7px;
+  }
+  .strike-through span {
+    display: block;
+  } 
+  #header {
+    margin-bottom: 10px;
+    padding: 40px 0;
+  }
+  #actions {
+    display: none;
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "davidjb-cv",
+  "version": "1.0.0",
+  "description": "My resume",
+  "main": "index.js",
+  "scripts": {
+    "test": "resume test",
+    "json": "yaml2json cv.yaml > resume.json",
+    "clean": "rm resume.json",
+    "export": "yarn run json && resume export cv.html && yarn run clean && open cv.html",
+    "serve": "yaml2json cv.yaml > resume.json && resume serve cv.html && rm resume.json && open cv.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidjb/cv.git"
+  },
+  "author": "David Beitey",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/davidjb/cv/issues"
+  },
+  "homepage": "https://github.com/davidjb/cv#readme",
+  "dependencies": {
+    "handlebars": "^4.7.6",
+    "handlebars-helpers": "^0.10.0",
+    "jsonresume-theme-davidjb": "./template",
+    "resume-cli": "^1.2.7",
+    "yamljs": "^0.3.0"
+  }
+}

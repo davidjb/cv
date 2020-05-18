@@ -1,3 +1,4 @@
+resume.json
 *.swp
 *.pyc
 *.pyo
@@ -8,6 +9,11 @@
 *.egg-info
 *.EGG-INFO
 .*.cfg
+.pnp.js
+.yarn/build-state.yml
+.yarn/cache/
+.yarn/install-state.gz
+.yarn/unplugged/
 bin/
 build/
 develop-eggs/
