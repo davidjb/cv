@@ -8,9 +8,9 @@ a {
 }
 
 section {
-  padding-bottom: 2rem;
-  border-bottom: 1px solid #ccc;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
 }
 
 section:last-child {
@@ -18,12 +18,18 @@ section:last-child {
 }
 
 h2 {
+  margin-bottom: 1rem;
   padding-right: 2rem;
   font-size: 2rem;
   color: #d28200;
 }
 
 @media (min-width: 768px) {
+  section {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+  }
+
   h2 {
     text-align: right;
   }
@@ -33,26 +39,34 @@ h3 span:first-child {
   font-weight: bold;
 }
 
-@media (min-width: 480px) {
-  .strike-through {
-    border-top: 1px solid #ccc;
-    margin-top: 1rem;
-    margin-bottom: -1rem;
-    position: relative;
-  }
-  .strike-through span,
-  .strike-through a {
-    background: #fff;
-    display: inline-block;
-    transform: translateY(-50%);
-  }
-  .strike-through span:first-child {
-    padding-right: 1rem;
-  }
+.strike-through {
+  position: relative;
+  border-top: 1px solid #ccc;
+  margin-top: 1rem;
+  margin-bottom: -1rem;
+}
+.strike-through span,
+.strike-through a {
+  background: #fff;
+  display: inline-block;
+  transform: translateY(-50%);
+}
+.strike-through span:first-child {
+  padding-right: 1rem;
+}
+.strike-through span + span {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
   .strike-through span + span {
+    display: inline-block;
     position: absolute;
     right: 0;
-    font-size: 14px;
+    font-size: 0.8rem;
+    margin-bottom: 0;
     padding-left: 1rem;
   }
 }
@@ -78,8 +92,14 @@ li > p {
   margin-bottom: 0;
 }
 
+.contact,
 .profile {
   margin-bottom: 1rem;
+}
+
+.contact:last-child,
+.profile:last-child {
+  margin-bottom: 0;
 }
 
 .profile .network {
@@ -93,7 +113,7 @@ li > p {
 .award,
 .publication,
 .skills {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .work:last-child,
@@ -105,51 +125,67 @@ li > p {
   margin-bottom: 0;
 }
 
+.project .type {
+  text-transform: capitalize;
+}
+
 .reference {
   border-left: 5px solid #e7e9ec;
   padding-left: 1rem;
 }
 
-#work .position,
-#volunteer .position {
+.work .position,
+.project .name,
+.volunteer .position,
+.education .area {
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
-#education .area {
-  font-weight: bold;
+
+.work .website,
+.volunteer .website,
+.project .url {
+  margin-bottom: 0.5rem;
 }
-#education .area:before {
+
+@media (min-width: 768px) {
+  .work .website,
+  .volunteer .website,
+  .project .url {
+    float: right;
+    margin-left: 1rem;
+  }
+}
+
+.education .area:before {
   content: "\f0d7";
   font: 2rem Octicons;
   margin-right: 0.5rem;
   vertical-align: middle;
 }
-#education .studyType {
+.education .studyType {
   margin-left: 1.5rem;
 }
 
-/* Old */
-#publications .website a:before {
-  content: attr(href);
+.publication .website a:before {
+  content: "View publication";
 }
 
-@media (max-width: 768px) {
-  .col-sm-6:last-child {
-    margin-bottom: 0px;
-  }
-  #content aside {
-    margin-bottom: 20px;
-    padding-right: 0;
-    text-align: left;
-  }
+@media (min-width: 768px) {
   #publications .website a:before {
-    content: "View publication";
+    content: attr(href);
   }
 }
+
+/* Old */
 @media (max-width: 480px) {
   h1 {
-    font-size: 26px;
+    font-size: 1.5rem;
   }
+  .h3 {
+    font-size: 1rem;
+  }
+  /*
   .date {
     font-size: 14px;
     margin-bottom: 5px;
@@ -160,11 +196,5 @@ li > p {
   .strike-through span {
     display: block;
   } 
-  #header {
-    margin-bottom: 10px;
-    padding: 40px 0;
-  }
-  #actions {
-    display: none;
-  }
+  */
 }

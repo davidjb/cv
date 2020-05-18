@@ -53,7 +53,7 @@
       <div class="col-sm-9">
         <div class="row">
         {{#email}}
-        <div class="col-sm-6">
+        <div class="col-sm-6 contact">
           <strong>Email</strong>
           <div class="email">
             <a href="mailto:{{.}}">{{.}}</a>
@@ -61,13 +61,13 @@
         </div>
         {{/email}}
         {{#phone}}
-        <div class="col-sm-6">
+        <div class="col-sm-6 contact">
           <strong>Phone</strong>
           <div class="phone">{{.}}</div>
         </div>
         {{/phone}}
         {{#website}}
-        <div class="col-sm-6">
+        <div class="col-sm-6 contact">
           <strong>Website</strong>
           <div class="website">
             <a href="{{.}}">{{.}}</a>
@@ -140,7 +140,7 @@
             </span>
           </h3>
           {{#website}}
-          <div class="website float-right">
+          <div class="website">
             <a href="{{.}}">{{.}}</a>
           </div>
           {{/website}}
@@ -172,10 +172,10 @@
       <div class="col-sm-3">
         <h2>Projects</h2>
       </div>
-      <div class="col-sm-9 project">
+      <div class="col-sm-9">
         <div class="row">
         {{#each resume.projects}}
-        <div class="col-12">
+        <div class="col-12 project">
           <h3 class="strike-through">
             <span>{{entity}}</span>
             <span class="date">
@@ -183,13 +183,13 @@
             </span>
           </h3>
           {{#url}}
-          <div class="url float-right">
+          <div class="url">
             <a href="{{.}}">{{.}}</a>
           </div>
           {{/url}}
           {{#name}}
           <div class="name">
-            {{.}} - {{../type}}
+            <span class="type">{{../type}}</span> – {{.}}
           </div>
           {{/name}}
           {{#description}}
@@ -242,7 +242,7 @@
             </span>
           </h3>
           {{#website}}
-          <div class="website float-right">
+          <div class="website">
             <a href="{{.}}">{{.}}</a>
           </div>
           {{/website}}
@@ -324,7 +324,7 @@
             <span>{{title}}</span>
           </h3>
           {{#date}}
-          <div class="date float-right">
+          <div class="date">
             <em>Awarded</em>
             {{.}}
           </div>
@@ -352,10 +352,10 @@
       <div class="col-sm-3">
         <h2>Publications</h2>
       </div>
-      <div class="col-sm-9 publication">
+      <div class="col-sm-9">
         <div class="row">
         {{#each resume.publications}}
-        <div class="col-12">
+        <div class="col-12 publication">
           <h3 class="strike-through">
             <span>{{name}}</span>
             <span class="date">
@@ -363,7 +363,7 @@
             </span>
           </h3>
           {{#website}}
-          <div class="website float-right">
+          <div class="website">
             <a href="{{.}}"></a>
           </div>
           {{/website}}
