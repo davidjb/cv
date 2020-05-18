@@ -82,7 +82,7 @@
         <h2>About</h2>
       </div>
       <div class="col-sm-9 lead">
-      {{#summary}}{{{markdown this linkify=true}}}{{/summary}}
+      {{#summary}}{{{markdown this}}}{{/summary}}
       </div>
     </section>
     {{#if profiles.length}}
@@ -150,13 +150,13 @@
           </div>
           {{/position}}
           {{#summary}}
-          <div class="summary lead">{{{markdown this linkify=true}}}</div>
+          <div class="summary lead">{{{markdown this}}}</div>
           {{/summary}}
           {{#if highlights.length}}
           <h3>Highlights</h3>
           <ul class="highlights">
             {{#highlights}}
-            <li class="bullet">{{{markdown this linkify=true}}}</li>
+            <li class="bullet">{{{markdown this}}}</li>
             {{/highlights}}
           </ul>
           {{/if}}
@@ -193,8 +193,8 @@
           </div>
           {{/name}}
           {{#description}}
-          <div class="description">
-            {{{markdown this linkify=true}}}
+          <div class="summary lead">
+            {{{markdown this}}}
           </div>
           {{/description}}
           <div class="row">
@@ -203,7 +203,7 @@
               <h3>Highlights</h3>
               <ul class="highlights">
                 {{#highlights}}
-                <li class="bullet">{{{markdown this linkify=true}}}</li>
+                <li class="bullet">{{{markdown this}}}</li>
                 {{/highlights}}
               </ul>
             </div>
@@ -213,7 +213,7 @@
               <h3>Roles</h3>
               <ul class="roles">
                 {{#roles}}
-                <li class="bullet">{{{markdown this linkify=true}}}</li>
+                <li class="bullet">{{{markdown this}}}</li>
                 {{/roles}}
               </ul>
             </div>
@@ -253,14 +253,14 @@
           {{/position}}
           {{#summary}}
           <div class="summary lead">
-            {{{markdown this linkify=true}}}
+            {{{markdown this}}}
           </div>
           {{/summary}}
           {{#if highlights.length}}
           <h3>Highlights</h3>
           <ul class="highlights">
             {{#highlights}}
-            <li class="bullet">{{{markdown this linkify=true}}}</li>
+            <li class="bullet">{{{markdown this}}}</li>
             {{/highlights}}
           </ul>
           {{/if}}
@@ -337,7 +337,7 @@
           {{/awarder}}
           {{#summary}}
           <div class="summary lead">
-            {{{markdown this linkify=true}}}
+            {{{markdown this}}}
           </div>
           {{/summary}}
         </div>
@@ -375,7 +375,7 @@
           {{/publisher}}
           {{#summary}}
           <div class="summary lead">
-            {{{markdown this linkify=true}}}
+            {{{markdown this}}}
           </div>
           {{/summary}}
         </div>
@@ -402,7 +402,7 @@
           {{#if keywords.length}}
           <ul class="keywords">
             {{#keywords}}
-            <li>{{{markdown this linkify=true}}}</li>
+            <li>{{{markdown this}}}</li>
             {{/keywords}}
           </ul>
           {{/if}}
@@ -479,7 +479,7 @@
           {{#if reference}}
           <blockquote class="blockquote">
             <div class="reference">
-            {{{markdown reference linkify=true}}}
+            {{{markdown reference}}}
             </div>
             {{#name}}
             <footer class="blockquote-footer">

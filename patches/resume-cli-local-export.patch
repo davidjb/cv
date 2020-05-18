@@ -1,0 +1,53 @@
+diff --git a/index.js b/index.js
+index 07aa5c0..de88d7a 100755
+--- a/index.js
++++ b/index.js
+@@ -16,7 +16,7 @@ lib.preFlow(function(err, results) {
+   program
+     .usage("[command] [options]")
+     .version(pkg.version)
+-    .option('-t, --theme <theme name>', 'Specify theme used by `export` (modern, crisp, flat: default)', 'flat')
++    .option('-t, --theme <theme name>', 'Specify theme used by `export` (modern, crisp, flat: default). Use local for local theme.', 'flat')
+     .option('-f, --format <file type extension>', 'Used by `export`.')
+     .option('-r, --resume <resume filename>', 'Used by `serve` (default: resume.json)', path.join(process.cwd(), 'resume.json'))
+     .option('-p, --port <port>', 'Used by `serve` (default: 4000)', 4000)
+diff --git a/lib/export-resume/index.js b/lib/export-resume/index.js
+index 4dd1085..ffa9a0d 100644
+--- a/lib/export-resume/index.js
++++ b/lib/export-resume/index.js
+@@ -14,7 +14,8 @@ var SUPPORTED_FILE_FORMATS = ["html", "pdf"];
+ 
+ module.exports = function exportResume(resumeJson, fileName, program, callback) {
+   var theme = program.theme;
+-  if(!theme.match('jsonresume-theme-.*')){
++
++  if(theme !== 'local' && !theme.match('jsonresume-theme-.*')){
+     theme = 'jsonresume-theme-' + theme;
+   }
+ 
+@@ -71,6 +72,25 @@ function createHtml(resumeJson, fileName, theme, format, callback) {
+ }
+ 
+ const getThemePkg = theme => {
++  if (theme === 'local') {
++    try {
++      const packageJson = require(path.join(process.cwd(), 'package'));
++      theme = require(path.join(process.cwd(), packageJson.main || 'index'));
++      const render = theme.render;
++
++      if(!render || typeof render !== 'function') {
++        console.log('Local theme requested and there is none');
++
++        process.exit();
++      }
++
++      return theme;
++    } catch (e) {
++      console.log('Local theme requested and there is none');
++      process.exit();
++    }
++  }
++
+   try {
+     const themePkg = require(theme);
+     return themePkg;

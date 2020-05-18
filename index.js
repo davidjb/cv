@@ -1,6 +1,6 @@
 const fs = require("fs")
 const handlebars = require("handlebars")
-const helpers = require('handlebars-helpers')
+const markdown = require('helper-markdown')
 
 module.exports = {
   render: render
@@ -15,9 +15,9 @@ function render(resume) {
   })
 }
 
-helpers.markdown({
-  handlebars: handlebars
-})
+handlebars.registerHelper("markdown", markdown({
+  linkify: true
+}))
 
 handlebars.registerHelper("nl2br", function(value) {
   return (value || "").replace(/\n/g, "</p><p>")
