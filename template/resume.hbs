@@ -49,9 +49,9 @@
             <h2>Contact</h2>
           </div>
           <div class="col-sm-9">
-            <div class="row">
+            <div class="row row-cols-1 row-cols-sm-2">
             {{#email}}
-            <div class="col-sm-6 contact">
+            <div class="col contact">
               <strong>Email</strong>
               <div class="email">
                 <a href="mailto:{{.}}">{{.}}</a>
@@ -59,13 +59,13 @@
             </div>
             {{/email}}
             {{#phone}}
-            <div class="col-sm-6 contact">
+            <div class="col contact">
               <strong>Phone</strong>
               <div class="phone">{{.}}</div>
             </div>
             {{/phone}}
             {{#website}}
-            <div class="col-sm-6 contact">
+            <div class="col contact">
               <strong>Website</strong>
               <div class="website">
                 <a href="{{.}}">{{.}}</a>
@@ -83,15 +83,91 @@
           {{#summary}}{{{markdown this}}}{{/summary}}
           </div>
         </section>
+        {{/resume.basics}}
+
+        <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top my-5">
+          {{#resume.basics}}
+          <a class="navbar-brand d-md-none" href="#main">
+            {{#picture}}
+            <img class="mr-1" src="{{.}}" alt="Picture of {{../name}}" width="30" height="30">
+            {{/picture}}
+            {{name}}
+          </a>
+          {{/resume.basics}}
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResume" aria-controls="navbarResume" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-md-center" id="navbarResume">
+            <ul class="navbar-nav">
+              {{#if profiles.length}}
+              <li class="nav-item">
+                <a class="nav-link" href="#profiles">Profiles</a>
+              </li>
+              {{/if}}
+              {{#if resume.work.length}}
+              <li class="nav-item">
+                <a class="nav-link" href="#employment">Employment</a>
+              </li>
+              {{/if}}
+              {{#if resume.projects.length}}
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              {{/if}}
+              {{#if resume.volunteer.length}}
+              <li class="nav-item">
+                <a class="nav-link" href="#volunteering">Volunteering</a>
+              </li>
+              {{/if}}
+              {{#if resume.education.length}}
+              <li class="nav-item">
+                <a class="nav-link" href="#education">Education</a>
+              </li>
+              {{/if}}
+              {{#if resume.awards.length}}
+              <li class="nav-item">
+                <a class="nav-link" href="#awards">Awards</a>
+              </li>
+              {{/if}}
+              {{#if resume.publications.length}}
+              <li class="nav-item">
+                <a class="nav-link" href="#publications">Publications</a>
+              </li>
+              {{/if}}
+              {{#if resume.skills.length}}
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              {{/if}}
+              {{#if resume.languages.length}}
+              <li class="nav-item">
+                <a class="nav-link" href="#languages">Languages</a>
+              </li>
+              {{/if}}
+              {{#if resume.interests.length}}
+              <li class="nav-item">
+                <a class="nav-link" href="#interests">Interests</a>
+              </li>
+              {{/if}}
+              {{#if resume.references.length}}
+              <li class="nav-item">
+                <a class="nav-link" href="#references">References</a>
+              </li>
+              {{/if}}
+            </ul>
+          </div>
+        </nav>
+
+        {{#resume.basics}}
         {{#if profiles.length}}
         <section id="profiles" class="row">
           <div class="col-sm-3">
             <h2>Profiles</h2>
           </div>
           <div class="col-sm-9">
-            <div class="row">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
               {{#profiles}}
-              <div class="col-sm-6 col-md-4 profile">
+              <div class="col profile">
                 {{#network}}
                 <strong class="network">
                   {{.}}
@@ -123,14 +199,14 @@
         {{/resume.basics}}
 
         {{#if resume.work.length}}
-        <section id="work" class="row">
+        <section id="employment" class="row">
           <div class="col-sm-3">
             <h2>Employment</h2>
           </div>
           <div class="col-sm-9">
-            <div class="row">
+            <div class="row row-cols-1">
             {{#each resume.work}}
-            <div class="col-12 work">
+            <div class="col work">
               <h3 class="strike-through">
                 <span>{{company}}</span>
                 <span class="date">
@@ -152,9 +228,9 @@
               {{/summary}}
               {{#if highlights.length}}
               <div class="h4">Highlights</div>
-              <ul class="highlights">
+              <ul class="list-fancy highlights">
                 {{#highlights}}
-                <li class="bullet">{{{markdown this}}}</li>
+                <li>{{{markdown this}}}</li>
                 {{/highlights}}
               </ul>
               {{/if}}
@@ -171,9 +247,9 @@
             <h2>Projects</h2>
           </div>
           <div class="col-sm-9">
-            <div class="row">
+            <div class="row row-cols-1">
             {{#each resume.projects}}
-            <div class="col-12 project">
+            <div class="col project">
               <h3 class="strike-through">
                 <span>{{entity}}</span>
                 <span class="date">
@@ -195,23 +271,23 @@
                 {{{markdown this}}}
               </div>
               {{/description}}
-              <div class="row">
+              <div class="row row-cols-2">
                 {{#if highlights.length}}
-                <div class="col-sm-6">
+                <div class="col">
                   <div class="h4">Highlights</div>
-                  <ul class="highlights">
+                  <ul class="list-fancy highlights">
                     {{#highlights}}
-                    <li class="bullet">{{{markdown this}}}</li>
+                    <li>{{{markdown this}}}</li>
                     {{/highlights}}
                   </ul>
                 </div>
                 {{/if}}
                 {{#if roles.length}}
-                <div class="col-sm-6">
+                <div class="col">
                   <div class="h4">Roles</div>
-                  <ul class="roles">
+                  <ul class="list-fancy roles">
                     {{#roles}}
-                    <li class="bullet">{{{markdown this}}}</li>
+                    <li>{{{markdown this}}}</li>
                     {{/roles}}
                   </ul>
                 </div>
@@ -225,14 +301,14 @@
         {{/if}}
 
         {{#if resume.volunteer.length}}
-        <section id="volunteer" class="row">
+        <section id="volunteering" class="row">
           <div class="col-sm-3">
             <h2>Volunteering</h2>
           </div>
           <div class="col-sm-9">
-            <div class="row">
+            <div class="row row-cols-1">
             {{#each resume.volunteer}}
-            <div class="col-12 volunteer">
+            <div class="col volunteer">
               <h3 class="strike-through">
                 <span>{{organization}}</span>
                 <span class="date">
@@ -256,9 +332,9 @@
               {{/summary}}
               {{#if highlights.length}}
               <div class="h4">Highlights</div>
-              <ul class="highlights">
+              <ul class="list-fancy highlights">
                 {{#highlights}}
-                <li class="bullet">{{{markdown this}}}</li>
+                <li>{{{markdown this}}}</li>
                 {{/highlights}}
               </ul>
               {{/if}}
@@ -275,9 +351,9 @@
             <h2>Education</h2>
           </div>
           <div class="col-sm-9">
-            <div class="row">
+            <div class="row row-cols-1">
             {{#each resume.education}}
-            <div class="col-12 education">
+            <div class="col education">
               <h3 class="strike-through">
                 <span>{{institution}}</span>
                 <span class="date">
@@ -296,7 +372,7 @@
               {{/studyType}}
               {{#if courses.length}}
               <h3>Courses</h3>
-              <ul class="courses">
+              <ul class="list-fancy courses">
                 {{#courses}}
                 <li>{{.}}</li>
                 {{/courses}}
@@ -315,9 +391,9 @@
             <h2>Awards</h2>
           </div>
           <div class="col-sm-9">
-            <div class="row">
+            <div class="row row-cols-1">
             {{#each resume.awards}}
-            <div class="col-12 award">
+            <div class="col award">
               <h3 class="strike-through">
                 <span>{{title}}</span>
               </h3>
@@ -351,9 +427,9 @@
             <h2>Publications</h2>
           </div>
           <div class="col-sm-9">
-            <div class="row">
+            <div class="row row-cols-1">
             {{#each resume.publications}}
-            <div class="col-12 publication">
+            <div class="col publication">
               <h3 class="strike-through">
                 <span>{{name}}</span>
                 <span class="date">
@@ -389,16 +465,16 @@
             <h2>Skills</h2>
           </div>
           <div class="col-sm-9">
-            <div class="row">
+            <div class="row row-cols-1 row-cols-sm-2">
             {{#each resume.skills}}
-            <div class="col-sm-6 skill">
+            <div class="col skill">
               {{#name}}
               <div class="name">
                 <h3>{{.}}</h3>
               </div>
               {{/name}}
               {{#if keywords.length}}
-              <ul class="keywords">
+              <ul class="list-fancy keywords">
                 {{#keywords}}
                 <li>{{{markdown this}}}</li>
                 {{/keywords}}
@@ -417,9 +493,9 @@
             <h2>Languages</h2>
           </div>
           <div class="col-sm-9">
-            <div class="row">
+            <div class="row row-cols-1 row-cols-sm-2">
             {{#each resume.languages}}
-            <div class="col-sm-6">
+            <div class="col">
               {{#language}}
               <div class="language">
                 <strong>{{.}}</strong>
@@ -443,16 +519,16 @@
             <h2>Interests</h2>
           </div>
           <div class="col-sm-9">
-            <div class="row">
+            <div class="row row-cols-1 row-cols-sm-2">
             {{#each resume.interests}}
-            <div class="col-sm-6">
+            <div class="col">
               {{#name}}
               <div class="name">
                 <h3>{{.}}</h3>
               </div>
               {{/name}}
               {{#if keywords.length}}
-              <ul class="keywords">
+              <ul class="list-fancy keywords">
                 {{#keywords}}
                 <li>{{.}}</li>
                 {{/keywords}}
@@ -471,9 +547,9 @@
             <h2>References</h2>
           </div>
           <div class="col-sm-9">
-            <div class="row">
+            <div class="row row-cols-1">
             {{#each resume.references}}
-            <div class="col-12">
+            <div class="col">
               {{#if reference}}
               <blockquote class="blockquote">
                 <div class="reference">
@@ -494,5 +570,14 @@
         {{/if}}
       </div>
     </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script>
+      $('.navbar-nav > li > a').on('click', function() {
+        $('.navbar-collapse').collapse('hide')
+      })
+    </script>
   </body>
 </html>

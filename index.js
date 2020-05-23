@@ -7,7 +7,7 @@ module.exports = {
 }
 
 function render(resume) {
-  const css = fs.readFileSync(__dirname + "/template/style.css", "utf-8")
+  const css = fs.readFileSync(__dirname + "/template/resume.css", "utf-8")
   const template = fs.readFileSync(__dirname + "/template/resume.hbs", "utf-8")
   return handlebars.compile(template)({
     css: css,
