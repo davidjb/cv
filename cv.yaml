@@ -14,17 +14,23 @@ basics:
     - network: GitHub
       url: https://github.com/davidjb
       username: @davidjb
+
+    - network: LinkedIn
+      url: https://linkedin.com/in/davidbeitey
+      username: @DavidBeitey
+
     - network: Twitter
       url: https://twitter.com/davidjb_
       username: @davidjb_
+
   summary: |
-    David is an experienced full-stack web developer and project manager, specialising in open source and customised applications.  With a client-driven focus, David applies specialised knowledge of web technologies and IT security to his work, including frontend and backend development, UI design, system administration, operations and end-user support.
+    David is a full-stack web developer and project manager, specialising in open source and customised applications.  With a client-driven focus, David applies specialised knowledge of web technologies and IT security to his work, including frontend and backend development, UI & UX design, system administration, operations and end-user support.
 
-    He is passionate about users, creating engaging user experiences (UX), open source software development, JavaScript, Python and Linux. His skills extend to other languages and various aspects of technology, being able to adapt to unseen (and challenging) development environments.
+    He is passionate about users, accessibility, creating engaging user experiences (UX), open source software development, JavaScript, Python and Linux. His experience extends to other languages and aspects of technology, enthusiastically investigating and adapting to unseen (and challenging) IT & development environments.
 
-    David's personal strengths are his attention to detail, holistic approaches to problem solving and professional integrity.  He believes in openness and honesty, advocating in the best interests of users  and fostering the community around information technology; he is an organiser of the local developers' group.
+    David's personal strengths are his attention to detail, his initiative, holistic approaches to problem solving and professional integrity.  He believes in openness and honesty, advocating for users and fostering communities around information technology; he is an organiser of a region developers' group.
 
-    He once fixed a $1m electron microscope by recovering a Solaris hard drive bit-by-bit (literally).
+    He once recovered a very expensive electron microscope by restoring a Solaris hard drive bit-by-bit (literally).
 skills:
   - name: Web Development
     level: Expert
@@ -33,7 +39,7 @@ skills:
       - Python frameworks (particularly Django, Pyramid)
       - HTML/CSS/SCSS
       - UI and UX Design
-      - Websites and CMS (Wordpress/Plone/Squiz Matrix)
+      - Websites and CMS (WordPress/Plone/Squiz Matrix)
 
   - name: Applications & Deployment
     level: Expert
@@ -59,7 +65,7 @@ skills:
       - Embedded devices
       - Automated systems management
       - Web servers (Nginx, Apache)
-      - End-user support
+      - End-user communication & support
 
   - name: Security
     level: Proficient
@@ -70,110 +76,132 @@ skills:
       - Testing and risk analysis
 
 work:
-  - company: David Beitey Consulting
+  - company: DavidJB Consulting
     website: https://davidjb.com
     position: Proprietor
-    startDate: '2017'
+    startDate: '2016-06-01'
     #endDate:
     highlights:
       - Independent IT project consulting
-      - Rapid web application development
-      - Training, user support
+      - Web app prototyping & development
+      - Security research and vulnerability reporting
+      - Software code review and report production
+      - Training & user support
 
   - company: James Cook University
     website: https://eresearch.jcu.edu.au
     position: Full-stack Developer (Online Technologies Manager), eResearch Centre
     startDate: '2014-05-31'
     #endDate:
-    highlights:
-      - Lead developer of numerous University online projects (jcu.me,
-        Research@JCU, JCU Journals)
-      - Lead dev of the JCU Web Framework
-      - CMS integration
-      - Technical operations for eResearch Centre
-      - Project lead on various open source projects
-      - User support and system administrator for research systems
-      - PM
-      - Classroom on the Reef, Outback
-      - RI websites and portals
-      - Lead consulting role on eResearch Centre projects
-      - University-wide data management review
-      - Shibboleth integration with Nginx webserver (world first)
-      - ORCID iD Linker
-      - Project manager on Advanced Standing Credit Calculator project
-      - Research Infrastructure ()
     summary: >
-      Full-stack deployment, support, web application and system administration
+      Development & operations of web applications and administrator of systems for
+      researchers, research projects and the public. Lead developer, project
+      manager and technical consultant for research and corporate enterprise,
+      with a focus on UX design and delivering engaging experiences through the creation of
+      user-friendly tools. Platforms are primarily built in JavaScript (React,
+      Express) and Python (Django, Pyramid, Bottle, Flask), but also PHP, Shell and associated
+      technologies.
+    highlights:
+      - >
+        Lead developer of core University projects
+        ([JCU Research Portfolio](https://jcu.me),
+        [ORCID iD Linker](https://research.jcu.edu.au/orcid-link),
+        [Research@JCU](https://research.jcu.edu.au),
+        [JCU Journals](https://journals.jcu.edu.au))
+      - System administrator, technical operations & project consultant for eResearch Centre
+      - Project manager for [JCU Advanced Standing Credit Portal](https://getcredit.jcu.edu.au))
+      - Maintainer and lead of [open source projects](https://github.com/jcu-eresearch)
+      - Creator of the [JCU Web Framework](https://web.jcu.io) and [JCU Content Distribution Network (CDN)](https://cdn.jcu.edu.au)
+      - Member of University's Change Advisory Board
+      - Technical representative for [ORCID](https://orcid.org) and Australian ORCID consortium
+      - Consultancy on and conducted review of Research Data Management (RDM) practices
+      - >
+        Designer & developer of CMS websites
+        ([Classroom on the Reef](https://classroomonthereef.com),
+        [Research Infrastructure](https://www.jcu.edu.au/research-infrastructure))
+      - Physical hardware services (streaming for Orpheus Island, 3D Vislab)
 
   - company: James Cook University
     website: https://eresearch.jcu.edu.au
     position: Web Development Manager, eResearch Centre
     startDate: '2011-05-02'
     endDate: '2014-05-31'
+    summary: >
+      Systems administrator with a core focus on delivering services to
+      Australian researchers in sectors such as medicine, biodiversity, climate
+      change, and agriculture. Bespoke web application and microservice
+      creation for research projects, University departments and individual
+      researchers' work. Platforms primarily built in Python (Pyramid, Plone),
+      frontend mapping libraries (Leaflet/OpenLayers) and associated web
+      technologies.
     highlights:
-      - Lead developer of JCU Research Portfolio (https://jcu.me)
-      - Project manager and developer of eSpaces.edu.au (collaborative workspaces with federated access to all researchers from  Australia and New Zealand)
-      - Project manager and developer of acclaim.edu.au (secure medical examiner portal)
-      - DevOps for various CMS-based member portals (IUCN Climate Change panel, Cyclone Testing Station, Tropical Data Hub)
-      - JCU Journals hosting - joint project with JCU Library
-      - Delivered Projects include Australian research platforms  (eSpaces.edu.au, eGRS)
+      - Project manager and developer of [eSpaces.edu.au](https://espaces.edu.au) – collaborative workspaces with federated access to all researchers from Australia and New Zealand
+      - Project manager and developer of [ACCLAiM](https://acclaim.edu.au) – secure medical examiner portal
+      - DevOps for secure portals (Cyclone Testing Station, [Tropical Data Hub](https://tropicaldatahub.org)) and
+      - Installation and customisation of [JCU Journals](https://journals.jcu.edu.au) in partnership with JCU Library
       - >
-        DevOps of customised research tools
+        Creation of bespoke research tools
         ([AgMudmap.org](https://web.archive.org/web/20180903030036/https://agmudmap.org/),
         [TerrestrialClimateChange.org.au](https://web.archive.org/web/20200518020905/https://terrestrialclimatechange.org.au/),
         [IUCN Climate Change Specialist Group](https://web.archive.org/web/20200518020840/https://iucn-ccsg.org/))
-      - VecNet
-    summary: >
+
 
   - company: James Cook University
     website: https://www.jcu.edu.au
     position: System Administrator, Discipline of Information Technology
     startDate: '2010-01-01'
     endDate: '2011-05-01'
-    highlights:
-      - Creation of University-wide feedback application ("JCU Words")
-      - Full time,
-      - Delivered Projects include Australian research platforms  (eSpaces.edu.au, eGRS)
     summary: >
-      Something
+      Application development and deployment of tools to support students,
+      staff and researchers in for day-to-day operations, data storage and
+      collaboration. Rapid development & deployment of the _JCU Words_
+      application for the Vice Chancellor's office to meet an urgent need.
+      Platforms primarily built using Python, HTML, CSS and associated tooling.
+    highlights:
+      - Developer of JCU Spaces – mini collaborative workspaces for data sharing
+      - DevOps for e-Graduate Research School platform, [eGRS](https://web.archive.org/web/20200519134332/https://egrs.jcu.edu.au/))
+      - Creation of University-wide feedback application (_JCU Words_ word cloud generator)
+      - RHEL virtual machine operations
+
 
   - company: James Cook University
     website: https://www.jcu.edu.au
     position: Project Officer, School of Mathematics, Physics and IT
     startDate: '2008-12-03'
     endDate: '2009-12-31'
-    highlights:
-      - Created Plone CMS-based staff portals for JCU schools and faculty staff
-      - Developed collaborative portals for University of Queensland researchers (SCORe, QFAB)
-      - Stand-alone, web-based interactive research tools
     summary: >
-      Something
+      Part of the School's IT support team, the role involved the creation and
+      maintenance of software platforms to support day-to-day operations as
+      well as research projects.
+    highlights:
+      - Created Plone CMS-based portals for JCU schools and faculty staff
+      - Developed portals for University of Queensland researchers (SCORe, QFAB)
+      - DevOps for stand-alone, web-based interactive research tools
+      - Website development and migration (research projects, conferences)
 
   - company: ARCHER Project
     website: https://archer.edu.au
     position: APAC Project Assistant
     startDate: '2007-09-17'
     endDate: '2008-12-02'
+    summary: >
+      The Australian Researcher Enabling Environment (ARCHER) project produced
+      dedicated software tools for researchers to collect, store and securely
+      share data with collaborators. The project supported generalised research
+      software tools such as those for communication, search, replication and
+      backup and electronic publication, providing access on a national scale.
     highlights:
       - Delivered nationally-utilised Australian research platforms
-      - IT developer using Plone-based collaborative workspace technology
-        (Python, JavaScript, HTML, CSS)
+      - IT developer using Plone-based collaborative workspace technology (Python, JavaScript, HTML, CSS)
       - System operations within RedHat Linux and CentOS environments
       - User support and requirements gathering
       - Operator of room-based AccessGrid and video conferencing tools
-    summary: >
-      The Australian Researcher Enabling Environment (ARCHER) project produced
-      software tools to enable Australian researchers to collect, store and
-      securely share data with collaborators. The project also supported
-      generalised research software tools such as those for communication,
-      search, replication and backup and electronic publication, providing
-      access on a national scale.
 
 # Types consist of 'volunteering', 'presentation', 'talk', 'application', 'conference'
 projects:
   - type: application
-    name: LiXiA React Prototype & Website
     entity: LiXiA Living Infrastructure
+    name: Prototype & Website
     url: https://lixia.com.au
     startDate: '2019-07-24'
     endDate: '2020-01-02'
@@ -184,13 +212,13 @@ projects:
     highlights:
       - React & JavaScript programming
       - Startup bootstrapping (domain, website, email)
-      - Wordpress development
+      - WordPress development
     roles:
       - Lead developer
 
   - type: talk
-    name: Software Review & Workshop
     entity: Food Rescue Initiative
+    name: Software Review & Workshop
     url: https://foodrescuetownsville.com/
     startDate: '2016-06-13'
     endDate: '2016-07-12'
@@ -200,6 +228,16 @@ projects:
       - Focus group leader
     roles:
       - Workshop facilitator
+
+  - type: presentation
+    entity: Media appearances
+    name: Local & national
+    startDate: '2016-01-01'
+    #endDate
+    roles:
+      - "ABC National News & Radio (2018-07-18): My Health Record"
+      - "[QUT: Pop-up 'maker space' launched to inspire Townsville](https://www.qut.edu.au/news?news-id=104539)"
+      - "WIN local news (2016-05-16): MixHaus"
 
 awards:
   - awarder: James Cook University
@@ -215,7 +253,7 @@ awards:
 
   - awarder: James Cook University
     date: '2019-10-22'
-    title: TropEco Excellence Award - Staff – Highly Commended
+    title: TropEco Excellence Award – Staff – Highly Commended
     summary: >
       Awarded for efforts in developing an e-waste reuse program at JCU
 
@@ -226,20 +264,21 @@ awards:
       Team OIC (Oh, I Compost) successfully re-purposed discarded eWaste,
       acquired a team bicycle to get around on campus, shared home-grown
       produce between staff members, greatly improved their area’s recycling,
-      including producing a highly instructional video on putting the right
-      thing in the right bin (https://youtu.be/9JLb91c4Lww).
+      including producing a [highly motivational
+      video](https://youtu.be/9JLb91c4Lww) on putting the right thing in the
+      right bin.
 
   - awarder: Division of Student Life, James Cook University
     date: '2018-12-01'
     title: Friends of Student Life Award
     summary: >
-      The JCU Credit Calculator offers students the ability to recive credit
+      The JCU Credit Calculator offers students the ability to receive credit
       (advanced standing) for studies completed at other institutions. The
       previous version of this software was hard to use, required days of
       manual data entry by administrators and was extremely expensive. The
       eResearch Centre built a modern React-based, fit-for-purpose tool that
       integrated automatically with other University systems, delivering a flowing,
-      engaging user experince – built and delivered for less than a tenth of
+      engaging user experience – built and delivered for less than a tenth of
       the cost of running the previous system for a single year.
 
   - awarder: Advance Queensland
@@ -247,14 +286,27 @@ awards:
     title: Community Digital Champion
     summary: >
       Chosen as a Digital Champion for work in the digital and entrepreneurship
-      spaces to share knowledge and experiences with the local community.
+      spaces to share knowledge and experiences with the local community
 
   - awarder: James Cook University
     date: '2013-12-01'
     title: Staff Excellence Award
     summary: >
-      Awarded for lead development of the JCU Research Portfolio (jcu.me), an
-      interactive web profile for all researchers at the University.
+      Awarded for lead development of the [JCU Research
+      Portfolio](https://jcu.me) , an interactive web profile for all
+      researchers at the University
+
+  - awarder: James Cook University
+    date: '2010-03-26'
+    title: University Medal (Bachelor Honours)
+
+  - awarder: James Cook University
+    date: '2008-05-07'
+    title: Hunter Medal in Computer Science
+
+  - awarder: James Cook University
+    date: '2008-03-31'
+    title: University Medal (Bachelor Coursework)
 
 education:
   - institution: James Cook University
@@ -267,7 +319,7 @@ education:
     area: Bachelor of Information Technology
     startDate: '2005-01-01'
     endDate: '2007-12-31'
-    gpa: '6.83'
+    gpa: '6.92'
 
 volunteer:
   - organization: DevNQ
@@ -344,7 +396,7 @@ volunteer:
 interests:
   - name: Technology
     keywords:
-      - Open source
+      - Open source & community
       - Node.js, Python, all languages
       - Security
       - UX/UI
@@ -356,16 +408,16 @@ interests:
       - Rose gardening
       - Fruiting trees & plants
       - Cooking
-      - DIY
+      - Home DIY
 
 languages:
   - language: English
     fluency: Native speaker
 
-references:
-  - name: Professor Ian Atkinson
-    reference: |-
-      Reference coming soon.
-  - name: Marianne Brown
-    reference: |-
-      Reference coming soon.
+#references:
+  #- name: Professor Ian Atkinson
+    #reference: |-
+      #Reference coming soon.
+  #- name: Marianne Brown
+    #reference: |-
+      #Reference coming soon.
