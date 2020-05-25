@@ -18,7 +18,12 @@
 
     <style>
     {{{css}}}
+
+    @media print {
+    {{{print}}}
+    }
     </style>
+
   </head>
   <body>
     <a class="sr-only" href="#main">Skip to main content</a>
@@ -30,7 +35,7 @@
           <div class="row align-items-center">
             {{#picture}}
             <div class="col-4 col-sm-2 offset-sm-1 text-center">
-              <img class="img-fluid" src="{{.}}" alt="Picture of {{../name}}">
+              <img class="profile-picture img-fluid" src="{{.}}" alt="Picture of {{../name}}">
             </div>
             {{/picture}}
             <div class="col col-sm-9">
@@ -85,7 +90,7 @@
         </section>
         {{/resume.basics}}
 
-        <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top my-5">
+        <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top my-5 d-print-none">
           {{#resume.basics}}
           <a class="navbar-brand d-md-none" href="#main">
             {{#picture}}
@@ -206,7 +211,7 @@
           <div class="col-sm-9">
             <div class="row row-cols-1">
             {{#each resume.work}}
-            <div class="col work">
+            <div class="col section-item work">
               <h3 class="strike-through">
                 <span>{{company}}</span>
                 <span class="date">
@@ -249,7 +254,7 @@
           <div class="col-sm-9">
             <div class="row row-cols-1">
             {{#each resume.projects}}
-            <div class="col project">
+            <div class="col section-item project">
               <h3 class="strike-through">
                 <span>{{entity}}</span>
                 <span class="date">
@@ -308,7 +313,7 @@
           <div class="col-sm-9">
             <div class="row row-cols-1">
             {{#each resume.volunteer}}
-            <div class="col volunteer">
+            <div class="col section-item volunteer">
               <h3 class="strike-through">
                 <span>{{organization}}</span>
                 <span class="date">
@@ -353,7 +358,7 @@
           <div class="col-sm-9">
             <div class="row row-cols-1">
             {{#each resume.education}}
-            <div class="col education">
+            <div class="col section-item education">
               <h3 class="strike-through">
                 <span>{{institution}}</span>
                 <span class="date">
@@ -393,7 +398,7 @@
           <div class="col-sm-9">
             <div class="row row-cols-1">
             {{#each resume.awards}}
-            <div class="col award">
+            <div class="col section-item award">
               <h3 class="strike-through">
                 <span>{{title}}</span>
               </h3>
@@ -429,7 +434,7 @@
           <div class="col-sm-9">
             <div class="row row-cols-1">
             {{#each resume.publications}}
-            <div class="col publication">
+            <div class="col section-item publication">
               <h3 class="strike-through">
                 <span>{{name}}</span>
                 <span class="date">
@@ -467,7 +472,7 @@
           <div class="col-sm-9">
             <div class="row row-cols-1 row-cols-sm-2">
             {{#each resume.skills}}
-            <div class="col skill">
+            <div class="col section-item skill">
               {{#name}}
               <div class="name">
                 <h3>{{.}}</h3>

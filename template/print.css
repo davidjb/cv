@@ -1,0 +1,117 @@
+@page {
+  /*size: 8.5in 11in;*/
+  margin: 1cm;
+}
+
+html,
+body {
+  /*min-width: unset !important;*/
+  margin: 0;
+  background: #fff;
+  background: transparent;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 10px;
+}
+
+.container {
+  margin:0 !important;
+  width: 100% !important;
+  min-width: unset !important;
+  max-width: none !important;
+}
+
+/* Go old school and bring back print-friendly floats from Bootstrap v3
+ * Flexbox print bug in Firefox intermittenly prevents correct flow after page breaks
+ * and causes overflow of flexbox over bottom edge of page
+ */
+.row {
+  display: block !important;
+}
+.row::before,
+.row::after {
+  display: table;
+  content: " ";
+}
+.row::after {
+  clear: both;
+}
+.col,
+.col-4 {
+  float: left;
+}
+
+section {
+  max-width: 110vw !important;
+  margin-bottom: 0.25cm;
+  padding-bottom: 0.25cm;
+}
+
+#header {
+  padding: 0.25cm !important;
+}
+
+#header .row {
+  max-width: 90vw;
+}
+
+#header .col-sm-9 {
+  margin-left: 1cm;
+  max-width: 75%;
+}
+
+.offset-sm-1 {
+  margin-left: 0 !important;
+}
+
+.profile-picture {
+  max-width: 3cm;
+}
+
+.qrcode {
+  text-align: right;
+  line-height: 1.1;
+}
+
+h2,
+.h2 {
+  margin-bottom: 0.1cm;
+  text-align: unset;
+}
+
+h3,
+.h3 {
+  font-size: 1.5rem;
+}
+
+h4,
+.h4 {
+  font-size: 1.25rem;
+}
+
+ul {
+  padding-left: 0.5cm;
+}
+
+.lead {
+  line-height: 1.3;
+}
+
+.about a::after,
+.username a::after,
+.summary a::after,
+.highlights a::after,
+.roles a::after {
+  content: " (" attr(href) ")";
+  color: #000;
+  font-size: 80%;
+}
+
+.list-fancy {
+  list-style: disc;
+}
+
+.list-fancy > li::before {
+  display: none;
+}
+

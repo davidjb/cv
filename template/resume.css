@@ -2,8 +2,8 @@ html,
 body {
   /* 56px navbar height + padding */
   scroll-padding-top: 72px;
-
 }
+
 /* Backport https://github.com/twbs/bootstrap/pull/29198 */
 a {
  color: #0d6efd;
@@ -51,6 +51,14 @@ section {
 
 section:last-child {
   border-bottom: 0 none;
+}
+
+.section-item {
+  margin-bottom: 0.5rem;
+}
+
+.section-item:last-child {
+  margin-bottom: 0;
 }
 
 h2 {
@@ -126,12 +134,12 @@ h3 span:first-child {
 
 .list-fancy > li::before {
   content: "\f052";
+  position: absolute;
   float: left;
   font: 13px Octicons;
   margin-top: 6px;
   margin-left: -20px;
   opacity: .3;
-  position: absolute;
 }
 
 .list-fancy > li > p {
@@ -156,32 +164,8 @@ h3 span:first-child {
   line-height: 1.2;
 }
 
-.work,
-.project,
-.volunteer,
-.education,
-.award,
-.publication,
-.skills {
-  margin-bottom: 1rem;
-}
-
-.work:last-child,
-.project:last-child,
-.volunteer:last-child,
-.education:last-child,
-.award:last-child,
-.publication:last-child {
-  margin-bottom: 0;
-}
-
 .project .type {
   text-transform: capitalize;
-}
-
-.reference {
-  border-left: 5px solid #e7e9ec;
-  padding-left: 1rem;
 }
 
 .work .position,
@@ -225,4 +209,13 @@ h3 span:first-child {
   #publications .website a::before {
     content: attr(href);
   }
+}
+
+.skills .list-fancy {
+  margin-bottom: 0;
+}
+
+.reference {
+  border-left: 5px solid #e7e9ec;
+  padding-left: 1rem;
 }

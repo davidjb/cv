@@ -8,11 +8,10 @@ module.exports = {
 
 function render(resume) {
   const css = fs.readFileSync(__dirname + "/template/resume.css", "utf-8")
+  const print = fs.readFileSync(__dirname + "/template/print.css", "utf-8")
   const template = fs.readFileSync(__dirname + "/template/resume.hbs", "utf-8")
-  return handlebars.compile(template)({
-    css: css,
-    resume: resume
-  })
+  return handlebars.compile(template)({ css, print, resume })
+  console.log(resume)
 }
 
 handlebars.registerHelper("markdown", markdown({
