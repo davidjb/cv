@@ -1,6 +1,6 @@
 basics:
   name: David Beitey
-  label: Full-stack dev, DevOps, Sys Admin and all things IT
+  label: Full-stack developer, DevOps, system administrator, project manager and more
   picture: 'https://github.com/davidjb/cv/raw/master/me.jpg'
   email: consulting@davidjb.com
   website: https://davidjb.com
@@ -18,6 +18,10 @@ basics:
     - network: LinkedIn
       url: https://linkedin.com/in/davidbeitey
       username: @DavidBeitey
+
+    - network: Speaker Deck
+      url: https://speakerdeck.com/davidjb/
+      username: @davidjb
 
     - network: Twitter
       url: https://twitter.com/davidjb_
@@ -103,22 +107,24 @@ work:
       technologies.
     highlights:
       - >
-        Lead developer of core University projects
-        ([JCU Research Portfolio](https://jcu.me),
+        Lead developer of core University projects, including
+        [JCU Research Portfolio](https://jcu.me),
         [ORCID iD Linker](https://research.jcu.edu.au/orcid-link),
         [Research@JCU](https://research.jcu.edu.au),
-        [JCU Journals](https://journals.jcu.edu.au))
+        [JCU Journals](https://journals.jcu.edu.au)
       - System administrator, technical operations & project consultant for eResearch Centre
       - Project manager for [JCU Advanced Standing Credit Portal](https://getcredit.jcu.edu.au))
-      - Maintainer and lead of [open source projects](https://github.com/jcu-eresearch)
+      - Maintainer and lead of [open source projects](https://github.com/jcu-eresearch), including [Nginx Shibboleth integration](https://github.com/nginx-shib/nginx-http-shibboleth)
       - Creator of the [JCU Web Framework](https://web.jcu.io) and [JCU Content Distribution Network (CDN)](https://cdn.jcu.edu.au)
+      - Supervision & mentoring of project staff, tertiary students, and work experience students
       - Member of University's Change Advisory Board
       - Technical representative for [ORCID](https://orcid.org) and Australian ORCID consortium
       - Consultancy on and conducted review of Research Data Management (RDM) practices
       - >
-        Designer & developer of CMS websites
-        ([Classroom on the Reef](https://classroomonthereef.com),
-        [Research Infrastructure](https://www.jcu.edu.au/research-infrastructure))
+        Designer & developer of CMS websites, including
+        [Classroom on the Reef](https://classroomonthereef.com),
+        [Research Infrastructure stations](https://www.jcu.edu.au/research-infrastructure),
+        [CVI Heritage](https://cvi-heritage.org)
       - Physical hardware services (streaming for Orpheus Island, 3D Vislab)
 
   - company: James Cook University
@@ -137,14 +143,14 @@ work:
     highlights:
       - Project manager and developer of [eSpaces.edu.au](https://espaces.edu.au) – collaborative workspaces with federated access to all researchers from Australia and New Zealand
       - Project manager and developer of [ACCLAiM](https://acclaim.edu.au) – secure medical examiner portal
-      - DevOps for secure portals (Cyclone Testing Station, [Tropical Data Hub](https://tropicaldatahub.org)) and
+      - DevOps for secure portals including Cyclone Testing Station and [Tropical Data Hub](https://tropicaldatahub.org)
       - Installation and customisation of [JCU Journals](https://journals.jcu.edu.au) in partnership with JCU Library
+      - Creation of University-wide feedback application (_JCU Words_ word cloud generator)
       - >
-        Creation of bespoke research tools
-        ([AgMudmap.org](https://web.archive.org/web/20180903030036/https://agmudmap.org/),
+        Creation of bespoke research tools:
+        [AgMudmap.org](https://web.archive.org/web/20180903030036/https://agmudmap.org/),
         [TerrestrialClimateChange.org.au](https://web.archive.org/web/20200518020905/https://terrestrialclimatechange.org.au/),
-        [IUCN Climate Change Specialist Group](https://web.archive.org/web/20200518020840/https://iucn-ccsg.org/))
-
+        [IUCN Climate Change Specialist Group](https://web.archive.org/web/20200518020840/https://iucn-ccsg.org/)
 
   - company: James Cook University
     website: https://www.jcu.edu.au
@@ -154,15 +160,16 @@ work:
     summary: >
       Application development and deployment of tools to support students,
       staff and researchers in for day-to-day operations, data storage and
-      collaboration. Rapid development & deployment of the _JCU Words_
-      application for the Vice Chancellor's office to meet an urgent need.
-      Platforms primarily built using Python, HTML, CSS and associated tooling.
+      collaboration. Rapid development & deployment of platforms to meet
+      stakeholder requirements from external organisations such as the Gold
+      Coast City Council and RMIT.  Platforms primarily built using Python,
+      HTML, CSS and associated tooling.
     highlights:
+      - Creation of Gold Coast City Council beach health portal, online hub for RMIT University Design Research Institute
+      - DevOps for e-Graduate Research School platform, [eGRS](https://web.archive.org/web/20200519134332/https://egrs.jcu.edu.au/)
       - Developer of JCU Spaces – mini collaborative workspaces for data sharing
-      - DevOps for e-Graduate Research School platform, [eGRS](https://web.archive.org/web/20200519134332/https://egrs.jcu.edu.au/))
-      - Creation of University-wide feedback application (_JCU Words_ word cloud generator)
+      - Supervision of development staff and casual support staff
       - RHEL virtual machine operations
-
 
   - company: James Cook University
     website: https://www.jcu.edu.au
@@ -227,6 +234,7 @@ projects:
       - Presentation preparation & delivery
       - Focus group leader
     roles:
+      - Code reviewer
       - Workshop facilitator
 
   - type: presentation
@@ -236,26 +244,22 @@ projects:
     #endDate
     roles:
       - "ABC National News & Radio (2018-07-18): My Health Record"
+      - "ABC Local Radio (2016): Townsville Startup Weekend"
       - "[QUT: Pop-up 'maker space' launched to inspire Townsville](https://www.qut.edu.au/news?news-id=104539)"
       - "WIN local news (2016-05-16): MixHaus"
 
 awards:
   - awarder: James Cook University
     date: '2019-10-22'
-    title: TropEco Sustainable Campuses Award – Winner
+    title: TropEco Sustainable Campuses Award
     summary: >
       For development and implementation of an eWaste recovery strategy after
       significant value was identified in eWaste that was previously sent for
       recycling.  A systematic process was developed at the university level to
       ensure recovered equipment is repurposed by staff, students and community
       groups resulting in over $12,000 of equipment recovered and reused to
-      date.
-
-  - awarder: James Cook University
-    date: '2019-10-22'
-    title: TropEco Excellence Award – Staff – Highly Commended
-    summary: >
-      Awarded for efforts in developing an e-waste reuse program at JCU
+      date. Also received a Highly Commended _TropEco Excellence Award – Staff_
+      for the same project.
 
   - awarder: TropEco, James Cook University
     date: '2019-10-22'
@@ -275,11 +279,11 @@ awards:
       The JCU Credit Calculator offers students the ability to receive credit
       (advanced standing) for studies completed at other institutions. The
       previous version of this software was hard to use, required days of
-      manual data entry by administrators and was extremely expensive. The
+      manual data entry by administrators and was inordinately expensive. The
       eResearch Centre built a modern React-based, fit-for-purpose tool that
-      integrated automatically with other University systems, delivering a flowing,
-      engaging user experience – built and delivered for less than a tenth of
-      the cost of running the previous system for a single year.
+      automatically integrates with other University systems, delivering a
+      flowing, engaging user experience – built and delivered for less than a
+      tenth of the cost of running the previous system for a single year.
 
   - awarder: Advance Queensland
     date: '2016-06-01'
@@ -348,7 +352,7 @@ volunteer:
       receive mentoring and assessment as part of the competition.
     highlights:
       - Interviewing & mentoring school students
-      - Juding of ICT project entries
+      - Judging of ICT project entries
 
   - organization: MixHaus
     website: http://www.mixhaus.com.au
@@ -372,12 +376,10 @@ volunteer:
     endDate: '2019-01-01'
     position: Organiser & Treasurer
     highlights:
+      - Meetup organiser and treasurer (2016-2019)
       - Organiser for Townsville Startup Weekend 2015 & 2016
-      - Meetup organiser
-      - Group treasurer
-      - Technical support
     summary: >
-      Local volunteer organisation dedicated to fostering entrepreneurship in
+      Local community organisation dedicated to fostering entrepreneurship in
       North Queensland.
 
   - organization: ICT Professionals in Schools
