@@ -1,4 +1,6 @@
-# My curriculum vitae
+# My curriculum vitae (CV)
+
+[![Deployment on GitHub Pages](https://github.com/davidjb/cv/workflows/Deploy-GitHubPages/badge.svg)](https://github.com/davidjb/cv/actions?query=workflow%3ADeploy-GitHubPages)
 
 ## Prospective employers
 
@@ -20,9 +22,12 @@ CV/resumé.
 
 ## Building
 
-To build, run the following:
+Any commit or change made to this repository will automatically deploy the
+changes to GitHub Pages.
+
+To build locally, however, run the following:
 
     yarn
-    yarn export
+    yarn view
 
-This will automatically display the resulting `cv.html` in your browser.
+This will automatically build and display the resulting `cv.html` in your browser.
