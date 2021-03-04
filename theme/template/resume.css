@@ -146,6 +146,10 @@ h3 span:first-child {
   margin-bottom: 0;
 }
 
+.postnominals {
+  font-size: 60%;
+}
+
 .contact,
 .profile {
   margin-bottom: 1rem;

@@ -1,6 +1,10 @@
+webpage:
+  alert: Interested in working together? I'm available for IT consulting work. Just get in touch to learn more.
+
 basics:
   name: David Beitey
-  label: Full-stack developer, DevOps, system administrator, project manager and more
+  postnominals: MACS CP
+  label: Full-stack developer, DevOps, system administrator, project manager and IT consultant
   picture: 'https://github.com/davidjb/cv/raw/master/me.jpg'
   email: consulting@davidjb.com
   website: https://davidjb.com
@@ -28,19 +32,19 @@ basics:
       username: '@davidjb_'
 
   summary: |
-    David is a full-stack web developer and project manager, specialising in open source and customised applications.  With a client-driven focus, David applies specialised knowledge of web technologies and IT security to his work, including frontend and backend development, UI & UX design, system administration, operations and end-user support.
+    David is a full-stack web developer, project manager and IT consultant, specialising in open source and customised applications.  With a client-driven focus, David applies specialised knowledge of web technologies and IT security to his work, including frontend and backend development, UI & UX design, system administration, operations and end-user support.
 
-    He is passionate about users, accessibility, creating engaging user experiences (UX), open source software development, JavaScript, Python and Linux. His experience extends to other languages and aspects of technology, enthusiastically investigating and adapting to unseen (and challenging) IT & development environments.
+    He is passionate about users, accessibility, creating engaging user experiences (UX), open source, Python, JavaScript and Linux. His experience extends to other languages and aspects of technology, enthusiastically investigating and adapting to unseen (and challenging) IT & development environments.
 
-    David's personal strengths are his attention to detail, his initiative, holistic approaches to problem solving and professional integrity.  He believes in openness and honesty, advocating for users and fostering communities around information technology; he is an organiser of a region developers' group.
+    David's personal strengths are his attention to detail, his initiative, holistic approaches to problem solving and professional integrity.  He believes in openness and honesty, advocating for users and fostering communities around information technology; he is an organiser of a regional developers' group and actively contributes to open source software.
 
-    He once recovered a very expensive electron microscope by restoring a Solaris hard drive bit-by-bit (literally).
+    He once recovered a very expensive electron microscope by restoring a Solaris hard drive bit-by-bit (literally) and programmes live devices underwater.
 skills:
   - name: Web Development
     level: Expert
     keywords:
-      - JavaScript (particularly Node.js, React, Vanilla)
-      - Python frameworks (particularly Django, Pyramid)
+      - JavaScript (such as Node.js, React)
+      - Python frameworks (such as Django, Pyramid)
       - HTML/CSS/SCSS
       - UI and UX Design
       - Websites and CMS (WordPress/Plone/Squiz Matrix)
@@ -48,9 +52,9 @@ skills:
   - name: Applications & Deployment
     level: Expert
     keywords:
-      - Configuration management (Vagrant, SaltStack)
+      - Configuration management (SaltStack, Vagrant)
       - Web application hosting
-      - Cloud hosting (Amazon AWS, OpenStack)
+      - Cloud & on-premise hosting (Amazon AWS, OpenStack, Docker)
       - Hardware-centric systems and environmental sensor platforms
 
   - name: Programming
@@ -72,12 +76,12 @@ skills:
       - End-user communication & support
 
   - name: Security
-    level: Proficient
+    level: Expert
     keywords:
-      - Web security (HTTPS, JWT)
+      - Web security (HTTPS, TLS, JWT)
       - Authentication (Shibboleth, OIDC, SSO)
-      - Server configuration
-      - Testing and risk analysis
+      - Server configuration and testing
+      - Software risk and vulnerability analysis
 
 work:
   - company: DavidJB Consulting
@@ -87,10 +91,10 @@ work:
     #endDate:
     highlights:
       - Independent IT project consulting
-      - Web app prototyping & development
       - Security research and vulnerability reporting
-      - Software code review and report production
-      - Training & user support
+      - Web app prototyping & development
+      - Software code analysis, review and report production
+      - Professional development, training & user support
 
   - company: James Cook University
     website: https://eresearch.jcu.edu.au
@@ -98,13 +102,13 @@ work:
     startDate: '2014-05-31'
     #endDate:
     summary: >
-      Development & operations of web applications and administrator of systems for
-      researchers, research projects and the public. Lead developer, project
-      manager and technical consultant for research and corporate enterprise,
-      with a focus on UX design and delivering engaging experiences through the creation of
-      user-friendly tools. Platforms are primarily built in JavaScript (React,
-      Express) and Python (Django, Pyramid, Bottle, Flask), but also PHP, Shell and associated
-      technologies.
+      Development & operations of web applications and administrator of systems
+      for researchers, research projects and the public. Lead developer,
+      project manager, security and technical consultant for research and
+      corporate enterprise, with a focus on UX design and delivering engaging
+      experiences through the creation of user-friendly tools. Platforms are
+      primarily built in JavaScript (React, Express) and Python (Django,
+      Pyramid, Bottle, Flask), but also PHP, Shell and associated technologies.
     highlights:
       - >
         Lead developer of core University projects, including
@@ -115,17 +119,17 @@ work:
       - System administrator, technical operations & project consultant for eResearch Centre
       - Project manager for [JCU Advanced Standing Credit Portal](https://getcredit.jcu.edu.au))
       - Maintainer and lead of [open source projects](https://github.com/jcu-eresearch), including [Nginx Shibboleth integration](https://github.com/nginx-shib/nginx-http-shibboleth)
-      - Creator of the [JCU Web Framework](https://web.jcu.io) and [JCU Content Distribution Network (CDN)](https://cdn.jcu.edu.au)
+      - Creator of the [JCU CookBook Web Framework](https://web.jcu.io) and [JCU Content Distribution Network (CDN)](https://cdn.jcu.edu.au)
       - Supervision & mentoring of project staff, tertiary students, and work experience students
-      - Member of University's Change Advisory Board
+      - Member of University's Change Advisory Board (CAB)
       - Technical representative for [ORCID](https://orcid.org) and Australian ORCID consortium
-      - Consultancy on and conducted review of Research Data Management (RDM) practices
+      - Technical advisor for Research Data Management (RDM) systems, policies and practices
       - >
         Designer & developer of CMS websites, including
         [Classroom on the Reef](https://classroomonthereef.com),
         [Research Infrastructure stations](https://www.jcu.edu.au/research-infrastructure),
         [CVI Heritage](https://cvi-heritage.org)
-      - Physical hardware services (streaming for Orpheus Island, 3D Vislab)
+      - Physical hardware services (underwater streaming for Orpheus Island, 3D Vislab)
 
   - company: James Cook University
     website: https://eresearch.jcu.edu.au
@@ -211,17 +215,20 @@ projects:
     name: Prototype & Website
     url: https://lixia.com.au
     startDate: '2019-07-24'
-    endDate: '2020-01-02'
+    endDate: '2020-08-01'
     description: >
       Creation of rapidly-prototyped React-based tablet interface for
-      interacting with proprietary sensor platform and, separately, a modern,
-      responsive website for the company
+      interacting with proprietary sensor platform; a modern, responsive
+      website for the company; design and implementation of secure, physical
+      networking infrastructure.
     highlights:
       - React & JavaScript programming
       - Startup bootstrapping (domain, website, email)
       - WordPress development
+      - Network deployment and configuration
     roles:
       - Lead developer
+      - Security consultant
 
   - type: talk
     entity: Food Rescue Initiative
@@ -340,6 +347,20 @@ volunteer:
       - Member of organising committee since 2018
       - Open governance author & contributor
       - Regular event presenter
+
+  - organization: Gateway to Industry Schools Program
+    website: https://qldictgisp.acs.org.au
+    startDate: '2020-07-01'
+    #endDate:
+    position: Industry Partner
+    summary: >
+      Queensland Government-supported program linking secondary school
+      students, parents and educators to the ICT industry with a view to
+      assistance with subject selection, workplacement and professional
+      development from professionals in the ICT industry.
+    highlights:
+      - Providing professional development to secondary teachers
+      - Reviewing and industry insight for educational content
 
   - organization: Young ICT Explorers
     website: https://www.youngictexplorers.net.au/
