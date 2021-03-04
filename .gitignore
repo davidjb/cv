@@ -17,17 +17,4 @@ resume.json
 .yarn/cache/
 .yarn/install-state.gz
 .yarn/unplugged/
-bin/
-build/
-develop-eggs/
-downloads/
-eggs/
-fake-eggs/
-parts/
-dist/
-var/
-include/
-lib/
-local/
-output/
 node_modules/
