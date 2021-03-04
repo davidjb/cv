@@ -12,6 +12,7 @@ resume.json
 *.EGG-INFO
 .*.cfg
 .pnp.js
+.pnp.cjs
 .yarn/build-state.yml
 .yarn/cache/
 .yarn/install-state.gz
