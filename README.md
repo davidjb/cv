@@ -13,23 +13,16 @@ interchange for resume/CV data.  However, whilst JSON is great from a programmat
 point-of-view, it is simply too verbose and tedious for hand-crafting by a
 human.  Have you ever forgotten a brace or added an extra comma?  Sure, me too.
 
-YAML, on the other hand, is easy to create and edit. It's also extremely
-human readable and isn't that the main point of a CV or resume?  Yes, I'd
-hoped you'd agree with me.
-
-This is my effort to use YAML to create a portable resume.  It's a work in
-progress.
+Thankfully, despite the project being _called_ JSONResume, it now also
+supports YAML because YAML, on the other hand, is easy to create and edit.
+It's also extremely human readable and that's the main point of a
+CV/resumé.
 
 ## Building
 
-This is work in progress.  I'm using Node to create an environment
-that can easily convert a YAML CV into a JSONResume and host via my current
-host, GitHub Pages::
+To build, run the following:
 
     yarn
     yarn export
 
-This will automatically push and import to GitHub Pages using ``ghp-import``,
-so you can go ahead and view the resulting page at https://davidjb.com/cv.
-Alternatively, view the resulting ``output/cv.html`` file in your favourite
-browser.
+This will automatically display the resulting `cv.html` in your browser.

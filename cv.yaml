@@ -13,19 +13,19 @@ basics:
   profiles:
     - network: GitHub
       url: https://github.com/davidjb
-      username: @davidjb
+      username: '@davidjb'
 
     - network: LinkedIn
       url: https://linkedin.com/in/davidbeitey
-      username: @DavidBeitey
+      username: "@DavidBeitey"
 
     - network: Speaker Deck
       url: https://speakerdeck.com/davidjb/
-      username: @davidjb
+      username: '@davidjb'
 
     - network: Twitter
       url: https://twitter.com/davidjb_
-      username: @davidjb_
+      username: '@davidjb_'
 
   summary: |
     David is a full-stack web developer and project manager, specialising in open source and customised applications.  With a client-driven focus, David applies specialised knowledge of web technologies and IT security to his work, including frontend and backend development, UI & UX design, system administration, operations and end-user support.

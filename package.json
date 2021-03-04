@@ -1,14 +1,12 @@
 {
   "name": "davidjb-cv",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "My resume",
   "main": "index.js",
   "scripts": {
-    "test": "resume test",
-    "json": "yaml2json cv.yaml > resume.json",
-    "clean": "rm resume.json",
-    "export": "yarn run json && resume export --theme local cv.html && yarn run clean && open cv.html",
-    "serve": "yarn run json && resume serve cv.html"
+    "validate": "resume validate --resume cv.yaml",
+    "export": "resume export --resume cv.yaml --theme ./theme cv.html && open cv.html",
+    "export-pdf": "resume export --resume cv.yaml --theme ./theme cv.pdf && open cv.pdf"
   },
   "repository": {
     "type": "git",
@@ -21,10 +19,9 @@
   },
   "homepage": "https://github.com/davidjb/cv#readme",
   "dependencies": {
-    "handlebars": "^4.7.6",
+    "handlebars": "^4.7.7",
     "helper-markdown": "^1.0.0",
-    "jsonresume-theme-davidjb": "./template",
-    "resume-cli": "patch:resume-cli@1.2.7#./patches/resume-cli-local-export.patch",
+    "resume-cli": "patch:resume-cli@3.0.4#./patches/fix-493.patch",
     "yamljs": "^0.3.0"
   }
 }
