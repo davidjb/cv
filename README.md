@@ -8,8 +8,8 @@ Or, view the raw YAML at  https://github.com/davidjb/cv/blob/master/cv.yaml.
 
 ## Background
 
-The notion of a `JSONResume`_ is amazing -- an standard interchange for
-resume/CV data.  However, whilst JSON is great from a programmatic
+The notion of a [JSONResume](https://jsonresume.org/) is amazing -- an standard
+interchange for resume/CV data.  However, whilst JSON is great from a programmatic
 point-of-view, it is simply too verbose and tedious for hand-crafting by a
 human.  Have you ever forgotten a brace or added an extra comma?  Sure, me too.
 
@@ -22,7 +22,7 @@ progress.
 
 ## Building
 
-This is work in progress.  I'm using Buildout to create an environment
+This is work in progress.  I'm using Node to create an environment
 that can easily convert a YAML CV into a JSONResume and host via my current
 host, GitHub Pages::
 
@@ -33,5 +33,3 @@ This will automatically push and import to GitHub Pages using ``ghp-import``,
 so you can go ahead and view the resulting page at https://davidjb.com/cv.
 Alternatively, view the resulting ``output/cv.html`` file in your favourite
 browser.
-
-.. _JSONResume: https://jsonresume.org/
