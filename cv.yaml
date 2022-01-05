@@ -212,9 +212,9 @@ work:
 
 # Types consist of 'volunteering', 'presentation', 'talk', 'application', 'conference'
 projects:
-  - type: application
+  - type: consulting
     entity: LiXiA Living Infrastructure
-    name: Prototype & Website
+    name: App Dev, Website & Setup
     url: https://lixia.com.au
     endDate: '2020-09-30'
     startDate: '2019-07-24'
@@ -239,8 +239,8 @@ projects:
     entity: Food Rescue Initiative
     name: Software Review & Workshop
     url: https://foodrescuetownsville.com/
-    startDate: '2016-06-13'
     endDate: '2016-07-12'
+    startDate: '2016-06-13'
     highlights:
       - Open source software review & testing
       - Presentation preparation & delivery
@@ -252,12 +252,12 @@ projects:
   - type: presentation
     entity: Media appearances
     name: Local & national
-    startDate: '2016-01-01'
     #endDate
-    roles:
+    startDate: '2016-01-01'
+    highlights:
       - "ABC National News & Radio (2018-07-18): My Health Record"
       - "ABC Local Radio (2016): Townsville Startup Weekend"
-      - "[QUT: Pop-up 'maker space' launched to inspire Townsville](https://www.qut.edu.au/news?news-id=104539)"
+      - "[QUT (2016-05-12): Pop-up 'maker space' launched to inspire Townsville](https://www.qut.edu.au/news?news-id=104539)"
       - "WIN local news (2016-05-16): MixHaus"
 
 awards:
