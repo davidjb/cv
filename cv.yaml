@@ -32,13 +32,13 @@ basics:
       username: '@davidjb_'
 
   summary: |
-    David is a full-stack web developer, project manager and IT consultant, specialising in open source and customised applications.  With a client-driven focus, David applies specialised knowledge of web technologies and IT security to his work, including frontend and backend development, UI & UX design, system administration, operations and end-user support.
+    David is a technologist, full-stack web developer and project manager, specialising in open source and customised applications.  With a client-driven focus, David applies specialised knowledge of web technologies and IT security to his work, including frontend and backend development, UI & UX design, system administration, operations and end-user support.
 
     He is passionate about users, accessibility, creating engaging user experiences (UX), open source, Python, JavaScript and Linux. His experience extends to other languages and aspects of technology, enthusiastically investigating and adapting to unseen (and challenging) IT & development environments.
 
-    David's personal strengths are his attention to detail, his initiative, holistic approaches to problem solving and professional integrity.  He believes in openness and honesty, advocating for users and fostering communities around information technology; he is an organiser of a regional developers' group and actively contributes to open source software.
+    David's personal strengths are his attention to detail, his initiative, holistic approaches to problem solving and professional integrity.  He believes in openness and honesty, advocating for users and fostering communities around information technology; he is an organiser of a regional developers' group and actively maintains/contributes to open source software.
 
-    He once recovered a very expensive electron microscope by restoring a Solaris hard drive bit-by-bit (literally) and programmes live devices underwater.
+    He once recovered a very expensive electron microscope by restoring an ancient Solaris hard drive bit-by-bit (literally), has hiked islands and the outback to install technology and programs live devices underwater.
 skills:
   - name: Web Development
     level: Expert
@@ -55,40 +55,41 @@ skills:
       - Configuration management (SaltStack, Vagrant)
       - Web application hosting
       - Cloud & on-premise hosting (Amazon AWS, OpenStack, Docker)
-      - Hardware-centric systems and environmental sensor platforms
+      - Project management
+      - Hardware-centric systems & environmental sensor platforms
 
   - name: Programming
     level: Expert
     keywords:
       - Python/JavaScript/Node.js
-      - Documentation writing & frameworks
       - Open source development
+      - Documentation writing & code review
       - Version control & management
 
   - name: System Administration
     level: Expert
     keywords:
-      - Linux (RedHat, Debian, Ubuntu)
+      - Linux/UNIX (RedHat, Debian, Ubuntu, FreeBSD)
+      - Web servers (Nginx, Apache) & app hosting
       - Server configuration
-      - Embedded devices
-      - Automated systems management
-      - Web servers (Nginx, Apache)
+      - Automated systems management & monitoring
       - End-user communication & support
+      - Embedded devices
 
   - name: Security
     level: Expert
     keywords:
+      - Server configuration, testing & hardening
+      - Software risk and vulnerability analysis
       - Web security (HTTPS, TLS, JWT)
       - Authentication (Shibboleth, OIDC, SSO)
-      - Server configuration and testing
-      - Software risk and vulnerability analysis
 
 work:
   - company: DavidJB Consulting
     website: https://davidjb.com
     position: Proprietor
-    startDate: '2016-06-01'
     #endDate:
+    startDate: '2016-06-01'
     highlights:
       - Independent IT project consulting
       - Security research and vulnerability reporting
@@ -99,16 +100,17 @@ work:
   - company: James Cook University
     website: https://eresearch.jcu.edu.au
     position: Full-stack Developer (Online Technologies Manager), eResearch Centre
-    startDate: '2014-05-31'
     #endDate:
+    startDate: '2014-05-31'
     summary: >
       Development & operations of web applications; administrator of systems
-      for researchers, research projects and the public. Lead developer,
-      project manager, security and technical consultant for research and
-      corporate enterprise, with a focus on UX design and delivering engaging
-      experiences through the creation of user-friendly tools. Platforms are
-      primarily built in JavaScript (React, Express) and Python (Django,
-      Pyramid, Bottle, Flask), but also PHP, Shell and associated technologies.
+      for researchers, research projects, University community and the public.
+      Lead developer, project manager, security and technical consultant for
+      research and corporate enterprise, with a focus on UX design and
+      delivering engaging experiences through the creation of user-friendly
+      tools. Platforms are primarily built in JavaScript (React, Express) and
+      Python (Django, Pyramid, Bottle, Flask), but also PHP, Shell and
+      associated appropriate technologies.
     highlights:
       - >
         Lead developer of core University projects, including
@@ -116,30 +118,30 @@ work:
         [ORCID iD Linker](https://research.jcu.edu.au/orcid-link),
         [Research@JCU](https://research.jcu.edu.au),
         [JCU Journals](https://journals.jcu.edu.au)
-      - System administrator, technical operations & project consultant for eResearch Centre
-      - Project manager for [JCU Advanced Standing Credit Portal](https://getcredit.jcu.edu.au))
+      - System administrator & project lead for technical operations of eResearch Centre
+      - Project manager & maintainer of [JCU Advanced Standing Credit Portal](https://getcredit.jcu.edu.au))
       - Maintainer and lead of [open source projects](https://github.com/jcu-eresearch), including [Nginx Shibboleth integration](https://github.com/nginx-shib/nginx-http-shibboleth)
-      - Creator of the [JCU CookBook Web Framework](https://web.jcu.io) and [JCU Content Distribution Network (CDN)](https://cdn.jcu.edu.au)
-      - Supervision & mentoring of project staff, tertiary students, and work experience students
+      - Creator of the [JCU CookBook](https://cookbook.jcu.io) and [JCU Content Distribution Network (CDN)](https://cdn.jcu.edu.au)
+      - Supervision & mentoring of project staff, tertiary/work experience students
       - Member of University's Change Advisory Board (CAB); Equity Contact Officer (ECO); Mental Health Working Group
       - Technical representative for [ORCID](https://orcid.org) and Australian ORCID consortium
       - Technical advisor for Research Data Management (RDM) systems, policies and practices
       - >
         Designer & developer of CMS websites, including
+        [JCU America](https://jcuamerica.org),
+        [CVI Heritage](https://cvi-heritage.org),
         [Classroom on the Reef](https://classroomonthereef.com),
-        [Research Infrastructure stations](https://www.jcu.edu.au/research-infrastructure),
-        [CVI Heritage](https://cvi-heritage.org)
       - Physical hardware services (underwater streaming for Orpheus Island, 3D Vislab)
 
   - company: James Cook University
     website: https://eresearch.jcu.edu.au
     position: Web Development Manager, eResearch Centre
-    startDate: '2011-05-02'
     endDate: '2014-05-31'
+    startDate: '2011-05-02'
     summary: >
       Systems administrator with a core focus on delivering services to
       Australian researchers in sectors such as medicine, biodiversity, climate
-      change, and agriculture. Bespoke web application and microservice
+      change, and agriculture. Bespoke web application and micro-service
       creation for research projects, University departments and individual
       researchers' work. Platforms primarily built in Python (Pyramid, Plone),
       frontend mapping libraries (Leaflet/OpenLayers) and associated web
@@ -148,7 +150,7 @@ work:
       - Project manager and developer of [eSpaces.edu.au](https://espaces.edu.au) – collaborative workspaces with federated access to all researchers from Australia and New Zealand
       - Project manager and developer of [ACCLAiM](https://acclaim.edu.au) – secure medical examiner portal
       - DevOps for secure portals including Cyclone Testing Station and [Tropical Data Hub](https://tropicaldatahub.org)
-      - Installation and customisation of [JCU Journals](https://journals.jcu.edu.au) in partnership with JCU Library
+      - Installation and customisation of [JCU Journals](https://journals.jcu.edu.au) (international journal hosting) in partnership with JCU Library
       - Creation of University-wide feedback application (_JCU Words_ word cloud generator)
       - >
         Creation of bespoke research tools:
@@ -159,8 +161,8 @@ work:
   - company: James Cook University
     website: https://www.jcu.edu.au
     position: System Administrator, Discipline of Information Technology
-    startDate: '2010-01-01'
     endDate: '2011-05-01'
+    startDate: '2010-01-01'
     summary: >
       Application development and deployment of tools to support students,
       staff and researchers in for day-to-day operations, data storage and
@@ -178,8 +180,8 @@ work:
   - company: James Cook University
     website: https://www.jcu.edu.au
     position: Project Officer, School of Mathematics, Physics and IT
-    startDate: '2008-12-03'
     endDate: '2009-12-31'
+    startDate: '2008-12-03'
     summary: >
       Part of the School's IT support team, the role involved the creation and
       maintenance of software platforms to support day-to-day operations as
@@ -193,8 +195,8 @@ work:
   - company: ARCHER Project
     website: https://archer.edu.au
     position: APAC Project Assistant
-    startDate: '2007-09-17'
     endDate: '2008-12-02'
+    startDate: '2007-09-17'
     summary: >
       The Australian Researcher Enabling Environment (ARCHER) project produced
       dedicated software tools for researchers to collect, store and securely
@@ -214,21 +216,24 @@ projects:
     entity: LiXiA Living Infrastructure
     name: Prototype & Website
     url: https://lixia.com.au
+    endDate: '2020-09-30'
     startDate: '2019-07-24'
-    endDate: '2020-08-01'
     description: >
       Creation of rapidly-prototyped React-based tablet interface for
       interacting with proprietary sensor platform; a modern, responsive
       website for the company; design and implementation of secure, physical
-      networking infrastructure.
+      networking infrastructure and technology required to support a startup
+      business.
     highlights:
       - React & JavaScript programming
       - Startup bootstrapping (domain, website, email)
+      - Cloud migration and configuration
+      - Network installation and training
       - WordPress development
       - Network deployment and configuration
     roles:
       - Lead developer
-      - Security consultant
+      - IT & security consultant
 
   - type: talk
     entity: Food Rescue Initiative
@@ -335,23 +340,23 @@ education:
 volunteer:
   - organization: DevNQ
     website: https://devnq.org
-    startDate: '2016-05-12'
     #endDate:
-    position: Treasurer, Organiser & Member
+    startDate: '2016-05-12'
+    position: Organiser, Treasurer & Member
     summary: >
       North Queensland’s software development community, bringing together
       people of different backgrounds through events, mentoring, workshops and
       more in Townsville, Queensland, Australia.
     highlights:
-      - Group treasurer since 2019
       - Member of organising committee since 2018
-      - Open governance author & contributor
+      - Group treasurer since 2019
       - Regular event presenter
+      - Open governance author & contributor
 
   - organization: Gateway to Industry Schools Program
     website: https://qldictgisp.acs.org.au
-    startDate: '2020-07-01'
     #endDate:
+    startDate: '2020-07-01'
     position: Industry Partner
     summary: >
       Queensland Government-supported program linking secondary school
@@ -364,8 +369,8 @@ volunteer:
 
   - organization: Young ICT Explorers
     website: https://www.youngictexplorers.net.au/
+    endDate: '2019-12-31'
     startDate: '2015-09-01'
-    #endDate:
     position: Age Category Judge
     summary: >
       Non-profit competition encouraging school students to create their best
@@ -377,8 +382,8 @@ volunteer:
 
   - organization: MixHaus
     website: http://www.mixhaus.com.au
-    startDate: '2015-12-16'
     endDate: '2016-12-31'
+    startDate: '2015-12-16'
     position: Volunteer
     highlights:
       - Construction of the MixHaus mobile makerspace (shipping container)
@@ -393,8 +398,8 @@ volunteer:
 
   - organization: Startup Townsville
     website: http://startuptownsville.com.au
-    startDate: '2015-09-01'
     endDate: '2019-01-01'
+    startDate: '2015-09-01'
     position: Organiser & Treasurer
     highlights:
       - Meetup organiser and treasurer (2016-2019)
@@ -405,8 +410,8 @@ volunteer:
 
   - organization: ICT Professionals in Schools
     website: http://www.scientistsinschools.edu.au/ict/
-    startDate: '2015-10-01'
     endDate: '2017-01-01'
+    startDate: '2015-10-01'
     position: St Margaret Mary's College
     highlights:
       - Volunteer IT professional in school
@@ -421,17 +426,17 @@ interests:
     keywords:
       - Open source & community
       - Node.js, Python, all languages
+      - Home automation
       - Security
       - UX/UI
       - Web development
       - Innovation & startups
-      - Home automation
   - name: Personal
     keywords:
       - Rose gardening
+      - Home DIY
       - Fruiting trees & plants
       - Cooking
-      - Home DIY
 
 languages:
   - language: English
