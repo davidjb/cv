@@ -235,6 +235,29 @@ projects:
       - Lead developer
       - IT & security consultant
 
+  - type: security
+    entity: Security Reports (CVEs)
+    #endDate
+    startDate: '2018'
+    highlights:
+      - "2021: MFA Vulnerability, Private Company"
+      - "2020: Login Vulnerabilities, Private Company"
+      - "[CVE-2019-8063](https://helpx.adobe.com/au/security/products/creative-cloud/apsb19-39.html#Acknowledgments): Adobe Creative Cloud"
+      - "[CVE-2018-4105](https://support.apple.com/en-us/HT208692): Apple APFS password input"
+      - "2018: Application Vulnerabilities, Private Company"
+
+  - type: presentation
+    entity: Media appearances
+    name: Local & national
+    #endDate
+    startDate: '2016'
+    highlights:
+      - "ABC National News & Radio (2018-07-18): My Health Record"
+      - "ABC Local Radio (2016): Townsville Startup Weekend"
+      - "[QUT (2016-05-12): Pop-up 'maker space' launched to inspire Townsville](https://www.qut.edu.au/news?news-id=104539)"
+      - "WIN local news (2016-05-16): MixHaus"
+
+
   - type: talk
     entity: Food Rescue Initiative
     name: Software Review & Workshop
@@ -249,24 +272,13 @@ projects:
       - Code reviewer
       - Workshop facilitator
 
-  - type: presentation
-    entity: Media appearances
-    name: Local & national
-    #endDate
-    startDate: '2016-01-01'
-    highlights:
-      - "ABC National News & Radio (2018-07-18): My Health Record"
-      - "ABC Local Radio (2016): Townsville Startup Weekend"
-      - "[QUT (2016-05-12): Pop-up 'maker space' launched to inspire Townsville](https://www.qut.edu.au/news?news-id=104539)"
-      - "WIN local news (2016-05-16): MixHaus"
-
 awards:
   - awarder: James Cook University
     date: '2019-10-22'
     title: TropEco Sustainable Campuses Award
     summary: >
-      For development and implementation of an eWaste recovery strategy after
-      significant value was identified in eWaste that was previously sent for
+      For development and implementation of an e-waste recovery strategy after
+      significant value was identified in e-waste that was previously sent for
       recycling.  A systematic process was developed at the university level to
       ensure recovered equipment is repurposed by staff, students and community
       groups resulting in over $12,000 of equipment recovered and reused to
@@ -277,7 +289,7 @@ awards:
     date: '2019-10-22'
     title: Green Impact – Highest Scoring Team
     summary: >
-      Team OIC (Oh, I Compost) successfully re-purposed discarded eWaste,
+      Team OIC (Oh, I Compost) successfully re-purposed discarded e-waste,
       acquired a team bicycle to get around on campus, shared home-grown
       produce between staff members, greatly improved their area’s recycling,
       including producing a [highly motivational
@@ -309,7 +321,7 @@ awards:
     title: Staff Excellence Award
     summary: >
       Awarded for lead development of the [JCU Research
-      Portfolio](https://jcu.me) , an interactive web profile for all
+      Portfolio](https://jcu.me), an interactive web profile for all
       researchers at the University
 
   - awarder: James Cook University
@@ -327,14 +339,14 @@ awards:
 education:
   - institution: James Cook University
     area: Bachelor of Information Technology (Honours)
-    startDate: '2008-01-01'
     endDate: '2008-12-31'
+    startDate: '2008-01-01'
     gpa: Class 1
 
   - institution: James Cook University
     area: Bachelor of Information Technology
-    startDate: '2005-01-01'
     endDate: '2007-12-31'
+    startDate: '2005-01-01'
     gpa: '6.92'
 
 volunteer:
@@ -361,7 +373,7 @@ volunteer:
     summary: >
       Queensland Government-supported program linking secondary school
       students, parents and educators to the ICT industry with a view to
-      assistance with subject selection, workplacement and professional
+      assistance with subject selection, work placement and professional
       development from professionals in the ICT industry.
     highlights:
       - Providing professional development to secondary teachers
@@ -408,7 +420,7 @@ volunteer:
       Local community organisation dedicated to fostering entrepreneurship in
       North Queensland.
 
-  - organization: ICT Professionals in Schools
+  - organization: STEM Professionals in Schools
     website: http://www.scientistsinschools.edu.au/ict/
     endDate: '2017-01-01'
     startDate: '2015-10-01'
@@ -418,7 +430,7 @@ volunteer:
       - Technical support to teachers
       - Course planning and assistance
     summary: >
-      CSIRO-run program for connecting volunteer ICT professionals to
+      CSIRO-run program for connecting volunteer STEM professionals to
       local schools and teachers.
 
 interests:
