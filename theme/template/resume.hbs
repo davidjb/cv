@@ -54,10 +54,10 @@
       <div id="content" class="container">
         {{#resume.basics}}
         <section id="contact" class="row">
-          <div class="col-sm-3">
+          <div class="col-sm-4 col-md-3">
             <h2>Contact</h2>
           </div>
-          <div class="col-sm-9">
+          <div class="col-sm-8 col-md-9">
             <div class="row row-cols-1 row-cols-sm-2">
             {{#email}}
             <div class="col contact">
@@ -85,10 +85,10 @@
           </div>
         </section>
         <section id="about" class="row">
-          <div class="col-sm-3">
+          <div class="col-sm-4 col-md-3">
             <h2>About</h2>
           </div>
-          <div class="col-sm-9 lead about">
+          <div class="col-sm-8 col-md-9 lead about">
           {{#summary}}{{{markdown this}}}{{/summary}}
           </div>
         </section>
@@ -170,10 +170,10 @@
         {{#resume.basics}}
         {{#if profiles.length}}
         <section id="profiles" class="row">
-          <div class="col-sm-3">
+          <div class="col-sm-4 col-md-3">
             <h2>Profiles</h2>
           </div>
-          <div class="col-sm-9">
+          <div class="col-sm-8 col-md-9">
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
               {{#profiles}}
               <div class="col profile">
@@ -209,10 +209,10 @@
 
         {{#if resume.work.length}}
         <section id="employment" class="row">
-          <div class="col-sm-3">
+          <div class="col-sm-4 col-md-3">
             <h2>Employment</h2>
           </div>
-          <div class="col-sm-9">
+          <div class="col-sm-8 col-md-9">
             <div class="row row-cols-1">
             {{#each resume.work}}
             <div class="col section-item work">
@@ -252,10 +252,10 @@
 
         {{#if resume.projects.length}}
         <section id="projects" class="row">
-          <div class="col-sm-3">
+          <div class="col-sm-4 col-md-3">
             <h2>Projects</h2>
           </div>
-          <div class="col-sm-9">
+          <div class="col-sm-8 col-md-9">
             <div class="row row-cols-1">
             {{#each resume.projects}}
             <div class="col section-item project">
@@ -311,10 +311,10 @@
 
         {{#if resume.volunteer.length}}
         <section id="volunteering" class="row">
-          <div class="col-sm-3">
+          <div class="col-sm-4 col-md-3">
             <h2>Volunteering</h2>
           </div>
-          <div class="col-sm-9">
+          <div class="col-sm-8 col-md-9">
             <div class="row row-cols-1">
             {{#each resume.volunteer}}
             <div class="col section-item volunteer">
@@ -356,10 +356,10 @@
 
         {{#if resume.education.length}}
         <section id="education" class="row">
-          <div class="col-sm-3">
+          <div class="col-sm-4 col-md-3">
             <h2>Education</h2>
           </div>
-          <div class="col-sm-9">
+          <div class="col-sm-8 col-md-9">
             <div class="row row-cols-1">
             {{#each resume.education}}
             <div class="col section-item education">
@@ -396,10 +396,10 @@
 
         {{#if resume.awards.length}}
         <section id="awards" class="row">
-          <div class="col-sm-3">
+          <div class="col-sm-4 col-md-3">
             <h2>Awards</h2>
           </div>
-          <div class="col-sm-9">
+          <div class="col-sm-8 col-md-9">
             <div class="row row-cols-1">
             {{#each resume.awards}}
             <div class="col section-item award">
@@ -432,10 +432,10 @@
 
         {{#if resume.publications.length}}
         <section id="publications" class="row">
-          <div class="col-sm-3">
+          <div class="col-sm-4 col-md-3">
             <h2>Publications</h2>
           </div>
-          <div class="col-sm-9">
+          <div class="col-sm-8 col-md-9">
             <div class="row row-cols-1">
             {{#each resume.publications}}
             <div class="col section-item publication">
@@ -470,10 +470,10 @@
 
         {{#if resume.skills.length}}
         <section id="skills" class="row">
-          <div class="col-sm-3">
+          <div class="col-sm-4 col-md-3">
             <h2>Skills</h2>
           </div>
-          <div class="col-sm-9">
+          <div class="col-sm-8 col-md-9">
             <div class="row row-cols-1 row-cols-sm-2">
             {{#each resume.skills}}
             <div class="col section-item skill">
@@ -498,10 +498,10 @@
 
         {{#if resume.languages.length}}
         <section id="languages" class="row">
-          <div class="col-sm-3">
+          <div class="col-sm-4 col-md-3">
             <h2>Languages</h2>
           </div>
-          <div class="col-sm-9">
+          <div class="col-sm-8 col-md-9">
             <div class="row row-cols-1 row-cols-sm-2">
             {{#each resume.languages}}
             <div class="col">
@@ -524,10 +524,10 @@
 
         {{#if resume.interests.length}}
         <section id="interests" class="row">
-          <div class="col-sm-3">
+          <div class="col-sm-4 col-md-3">
             <h2>Interests</h2>
           </div>
-          <div class="col-sm-9">
+          <div class="col-sm-8 col-md-9">
             <div class="row row-cols-1 row-cols-sm-2">
             {{#each resume.interests}}
             <div class="col">
@@ -552,10 +552,10 @@
 
         {{#if resume.references.length}}
         <section id="references" class="row">
-          <div class="col-sm-3">
+          <div class="col-sm-4 col-md-3">
             <h2>References</h2>
           </div>
-          <div class="col-sm-9">
+          <div class="col-sm-8 col-md-9">
             <div class="row row-cols-1">
             {{#each resume.references}}
             <div class="col">
