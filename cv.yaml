@@ -1,5 +1,5 @@
 webpage:
-  alert: Interested in working together? I'm available for IT consulting work. Just get in touch to learn more.
+  alert: Interested in working together? I'm available for IT consulting work. [Get in touch!](mailto:consulting@davidjb.com)
 
 basics:
   name: David Beitey
@@ -36,9 +36,9 @@ basics:
 
     He is passionate about users, accessibility, creating engaging user experiences (UX), open source, Python, JavaScript and Linux. His experience extends to other languages and aspects of technology, enthusiastically investigating and adapting to unseen (and challenging) IT & development environments.
 
-    David's personal strengths are his attention to detail, his initiative, holistic approaches to problem solving and professional integrity.  He believes in openness and honesty, advocating for users and fostering communities around information technology; he is an organiser of a regional developers' group and actively maintains/contributes to open source software.
+    David's personal strengths are his attention to detail, his initiative, holistic approaches to problem solving and professional integrity.  He believes in openness and honesty, advocating for users and fostering communities around information technology; he is an organiser of a regional developers' group and actively maintains and contributes to open source software.
 
-    He once recovered a very expensive electron microscope by restoring an ancient Solaris hard drive bit-by-bit (literally), has hiked islands and the outback to install technology and programs live devices underwater.
+    He once recovered a very expensive electron microscope by restoring an ancient Solaris hard drive bit-by-bit (literally), has hiked islands and the outback to install technology and programmed and debugged live underwater electronics.
 skills:
   - name: Web Development
     level: Expert
@@ -64,7 +64,7 @@ skills:
       - Python/JavaScript/Node.js
       - Open source development
       - Documentation writing & code review
-      - Version control & management
+      - Version control & management (Git, Mercurial, SVN)
 
   - name: System Administration
     level: Expert
@@ -83,6 +83,12 @@ skills:
       - Software risk and vulnerability analysis
       - Web security (HTTPS, TLS, JWT)
       - Authentication (Shibboleth, OIDC, SSO)
+
+  - name: Other
+    level: Expert
+    keywords:
+      - Class C Driver's Licence
+      - First Aid Certificate
 
 work:
   - company: DavidJB Consulting
@@ -119,18 +125,18 @@ work:
         [Research@JCU](https://research.jcu.edu.au),
         [JCU Journals](https://journals.jcu.edu.au)
       - System administrator & project lead for technical operations of eResearch Centre
-      - Project manager & maintainer of [JCU Advanced Standing Credit Portal](https://getcredit.jcu.edu.au))
+      - Project manager & maintainer of [JCU Advanced Standing Credit Portal](https://getcredit.jcu.edu.au)
       - Maintainer and lead of [open source projects](https://github.com/jcu-eresearch), including [Nginx Shibboleth integration](https://github.com/nginx-shib/nginx-http-shibboleth)
       - Creator of the [JCU CookBook](https://cookbook.jcu.io) and [JCU Content Distribution Network (CDN)](https://cdn.jcu.edu.au)
       - Supervision & mentoring of project staff, tertiary/work experience students
       - Member of University's Change Advisory Board (CAB); Equity Contact Officer (ECO); Mental Health Working Group
-      - Technical representative for [ORCID](https://orcid.org) and Australian ORCID consortium
+      - Technical representative for [ORCID](https://orcid.org) and [Australian ORCID consortium](https://aaf.edu.au/orcid/)
       - Technical advisor for Research Data Management (RDM) systems, policies and practices
       - >
         Designer & developer of CMS websites, including
         [JCU America](https://jcuamerica.org),
-        [CVI Heritage](https://cvi-heritage.org),
-        [Classroom on the Reef](https://classroomonthereef.com),
+        [CVI Heritage](https://cvi-heritage.org) and
+        [Classroom on the Reef](https://classroomonthereef.com)
       - Physical hardware services (underwater streaming for Orpheus Island, 3D Vislab)
 
   - company: James Cook University
@@ -139,7 +145,7 @@ work:
     endDate: '2014-05-31'
     startDate: '2011-05-02'
     summary: >
-      Systems administrator with a core focus on delivering services to
+      System administrator with a core focus on delivering services to
       Australian researchers in sectors such as medicine, biodiversity, climate
       change, and agriculture. Bespoke web application and micro-service
       creation for research projects, University departments and individual
@@ -354,14 +360,13 @@ volunteer:
     website: https://devnq.org
     #endDate:
     startDate: '2016-05-12'
-    position: Organiser, Treasurer & Member
+    position: Organiser & Member
     summary: >
       North Queensland’s software development community, bringing together
       people of different backgrounds through events, mentoring, workshops and
       more in Townsville, Queensland, Australia.
     highlights:
       - Member of organising committee since 2018
-      - Group treasurer since 2019
       - Regular event presenter
       - Open governance author & contributor
 
