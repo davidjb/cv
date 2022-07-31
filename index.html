@@ -7,7 +7,7 @@
     <title>David Beitey - Resumé</title>
     <link rel="shortcut icon" href="https://github.com/davidjb/cv/raw/master/me.jpg" />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
 
     <style>
@@ -362,10 +362,11 @@ ul {
 
   </head>
   <body>
-    <a class="sr-only" href="#main">Skip to main content</a>
+    <a class="visually-hidden-focusable" href="#home">Skip to main content</a>
 
-    <main id="main">
-        <div class="alert alert-dark mb-0 text-center" role="alert">Interested in working together? I&#x27;m available for IT consulting work. Just get in touch to learn more.</div>
+    <main id="home">
+        <div class="alert alert-dark mb-0 pb-0 rounded-0 text-center" role="alert"><p>Interested in working together? I'm available for IT consulting work. <a href="mailto:consulting@davidjb.com">Get in touch!</a></p>
+</div>
 
       <header class="bg-light mb-3 mb-md-5 py-3 py-md-5" id="header">
         <div class="container">
@@ -381,8 +382,8 @@ ul {
         </div>
       </header>
 
-      <div id="content" class="container">
-        <section id="contact" class="row">
+      <div class="container" id="content">
+        <section class="row" id="contact">
           <div class="col-sm-4 col-md-3">
             <h2>Contact</h2>
           </div>
@@ -410,47 +411,55 @@ ul {
           <div class="col-sm-8 col-md-9 lead about">
           <p>David is a technologist, full-stack web developer and project manager, specialising in open source and customised applications.  With a client-driven focus, David applies specialised knowledge of web technologies and IT security to his work, including frontend and backend development, UI &amp; UX design, system administration, operations and end-user support.</p>
 <p>He is passionate about users, accessibility, creating engaging user experiences (UX), open source, Python, JavaScript and Linux. His experience extends to other languages and aspects of technology, enthusiastically investigating and adapting to unseen (and challenging) IT &amp; development environments.</p>
-<p>David's personal strengths are his attention to detail, his initiative, holistic approaches to problem solving and professional integrity.  He believes in openness and honesty, advocating for users and fostering communities around information technology; he is an organiser of a regional developers' group and actively maintains/contributes to open source software.</p>
-<p>He once recovered a very expensive electron microscope by restoring an ancient Solaris hard drive bit-by-bit (literally), has hiked islands and the outback to install technology and programs live devices underwater.</p>
+<p>David's personal strengths are his attention to detail, his initiative, holistic approaches to problem solving and professional integrity.  He believes in openness and honesty, advocating for users and fostering communities around information technology; he is an organiser of a regional developers' group and actively maintains and contributes to open source software.</p>
+<p>He once recovered a very expensive electron microscope by restoring an ancient Solaris hard drive bit-by-bit (literally), has hiked islands and the outback to install technology and programmed and debugged live underwater electronics.</p>
 
           </div>
         </section>
 
-        <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top my-5 d-print-none">
-          <a class="navbar-brand d-md-none" href="#main">
-            <img class="mr-1" src="https://github.com/davidjb/cv/raw/master/me.jpg" alt="Picture of David Beitey" width="30" height="30">
-            David Beitey
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResume" aria-controls="navbarResume" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-md-center" id="navbarResume">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#employment">Employment</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#projects">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#volunteering">Volunteering</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#education">Education</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#awards">Awards</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#skills">Skills</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#languages">Languages</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#interests">Interests</a>
-              </li>
-            </ul>
+        <nav class="navbar navbar-expand-md bg-light sticky-top my-5 d-print-none" id="navbar">
+          <div class="container-fluid">
+            <a class="navbar-brand d-md-none" href="#main">
+              <img class="mr-1" src="https://github.com/davidjb/cv/raw/master/me.jpg" alt="Picture of David Beitey" width="30" height="30">
+              David Beitey
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResume" aria-controls="navbarResume" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-md-center bg-light" id="navbarResume">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link fw-bold" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#profiles">Profiles</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#employment">Employment</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#volunteering">Volunteering</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#education">Education</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#awards">Awards</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#languages">Languages</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#interests">Interests</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </nav>
 
@@ -558,7 +567,7 @@ ul {
 </li>
                 <li><p>System administrator &amp; project lead for technical operations of eResearch Centre</p>
 </li>
-                <li><p>Project manager &amp; maintainer of <a href="https://getcredit.jcu.edu.au">JCU Advanced Standing Credit Portal</a>)</p>
+                <li><p>Project manager &amp; maintainer of <a href="https://getcredit.jcu.edu.au">JCU Advanced Standing Credit Portal</a></p>
 </li>
                 <li><p>Maintainer and lead of <a href="https://github.com/jcu-eresearch">open source projects</a>, including <a href="https://github.com/nginx-shib/nginx-http-shibboleth">Nginx Shibboleth integration</a></p>
 </li>
@@ -568,11 +577,11 @@ ul {
 </li>
                 <li><p>Member of University's Change Advisory Board (CAB); Equity Contact Officer (ECO); Mental Health Working Group</p>
 </li>
-                <li><p>Technical representative for <a href="https://orcid.org">ORCID</a> and Australian ORCID consortium</p>
+                <li><p>Technical representative for <a href="https://orcid.org">ORCID</a> and <a href="https://aaf.edu.au/orcid/">Australian ORCID consortium</a></p>
 </li>
                 <li><p>Technical advisor for Research Data Management (RDM) systems, policies and practices</p>
 </li>
-                <li><p>Designer &amp; developer of CMS websites, including <a href="https://jcuamerica.org">JCU America</a>, <a href="https://cvi-heritage.org">CVI Heritage</a>, <a href="https://classroomonthereef.com">Classroom on the Reef</a>,</p>
+                <li><p>Designer &amp; developer of CMS websites, including <a href="https://jcuamerica.org">JCU America</a>, <a href="https://cvi-heritage.org">CVI Heritage</a> and <a href="https://classroomonthereef.com">Classroom on the Reef</a></p>
 </li>
                 <li><p>Physical hardware services (underwater streaming for Orpheus Island, 3D Vislab)</p>
 </li>
@@ -591,7 +600,7 @@ ul {
               <div class="position">
                 Web Development Manager, eResearch Centre
               </div>
-              <div class="summary lead"><p>Systems administrator with a core focus on delivering services to Australian researchers in sectors such as medicine, biodiversity, climate change, and agriculture. Bespoke web application and micro-service creation for research projects, University departments and individual researchers' work. Platforms primarily built in Python (Pyramid, Plone), frontend mapping libraries (Leaflet/OpenLayers) and associated web technologies.</p>
+              <div class="summary lead"><p>System administrator with a core focus on delivering services to Australian researchers in sectors such as medicine, biodiversity, climate change, and agriculture. Bespoke web application and micro-service creation for research projects, University departments and individual researchers' work. Platforms primarily built in Python (Pyramid, Plone), frontend mapping libraries (Leaflet/OpenLayers) and associated web technologies.</p>
 </div>
               <div class="h4">Highlights</div>
               <ul class="list-fancy highlights">
@@ -858,7 +867,7 @@ ul {
                 <a href="https://devnq.org">https://devnq.org</a>
               </div>
               <div class="position">
-                Organiser, Treasurer &amp; Member
+                Organiser &amp; Member
               </div>
               <div class="summary lead">
                 <p>North Queensland’s software development community, bringing together people of different backgrounds through events, mentoring, workshops and more in Townsville, Queensland, Australia.</p>
@@ -867,8 +876,6 @@ ul {
               <div class="h4">Highlights</div>
               <ul class="list-fancy highlights">
                 <li><p>Member of organising committee since 2018</p>
-</li>
-                <li><p>Group treasurer since 2019</p>
 </li>
                 <li><p>Regular event presenter</p>
 </li>
@@ -1227,7 +1234,7 @@ ul {
 </li>
                 <li><p>Documentation writing &amp; code review</p>
 </li>
-                <li><p>Version control &amp; management</p>
+                <li><p>Version control &amp; management (Git, Mercurial, SVN)</p>
 </li>
               </ul>
             </div>
@@ -1262,6 +1269,17 @@ ul {
                 <li><p>Web security (HTTPS, TLS, JWT)</p>
 </li>
                 <li><p>Authentication (Shibboleth, OIDC, SSO)</p>
+</li>
+              </ul>
+            </div>
+            <div class="col section-item skill">
+              <div class="name">
+                <h3>Other</h3>
+              </div>
+              <ul class="list-fancy keywords">
+                <li><p>Class C Driver's Licence</p>
+</li>
+                <li><p>First Aid Certificate</p>
 </li>
               </ul>
             </div>
@@ -1325,12 +1343,14 @@ ul {
       </div>
     </main>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script>
-      $('.navbar-nav > li > a').on('click', function() {
-        $('.navbar-collapse').collapse('hide')
-      })
+      (function() {
+        Array.from(document.querySelectorAll('#navbar .nav-link'))
+          .forEach(e => e.addEventListener('click', () => {
+            bootstrap.Collapse.getInstance('#navbarResume').hide()
+          }))
+      })()
     </script>
   </body>
 </html>
