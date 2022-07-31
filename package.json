@@ -8,6 +8,7 @@
     "export": "resume export --resume cv.yaml --theme ./theme build/index.html",
     "export-pdf": "resume export --resume cv.yaml --theme ./theme build/cv.pdf",
     "view": "yarn run export && open build/index.html",
+    "watch": "chokidar cv.yaml \"theme/template/*\" -c \"yarn run export\"",
     "predeploy": "yarn run export",
     "deploy": "gh-pages -d build/"
   },
@@ -22,6 +23,7 @@
   },
   "homepage": "https://github.com/davidjb/cv#readme",
   "dependencies": {
+    "chokidar-cli": "^3.0.0",
     "gh-pages": "^4.0.0",
     "handlebars": "^4.7.7",
     "helper-markdown": "^1.0.0",

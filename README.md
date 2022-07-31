@@ -31,3 +31,8 @@ To build locally, however, run the following:
     yarn view
 
 This will automatically build and display the resulting `cv.html` in your browser.
+
+To watch for changes to data or the underlying theme and automatically
+rebuild, run:
+
+    yarn watch
