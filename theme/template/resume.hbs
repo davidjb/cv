@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     {{#resume.basics}}
     {{#name}}
@@ -30,11 +30,11 @@
 
     <main id="home">
       {{#resume.webpage}}
-        {{#alert}}<div class="alert alert-dark mb-0 pb-0 rounded-0 text-center" role="alert">{{{markdown this}}}</div>{{/alert}}
+        {{#alert}}<div class="alert alert-dark d-print-none mb-0 pb-0 rounded-0 text-center" role="alert">{{{markdown this}}}</div>{{/alert}}
       {{/resume.webpage}}
 
       {{#resume.basics}}
-      <header class="bg-light mb-3 mb-md-5 py-3 py-md-5" id="header">
+      <header class="bg-light mb-3 mb-md-4 py-2 py-md-5" id="header">
         <div class="container">
           <div class="row align-items-center">
             {{#picture}}
@@ -54,11 +54,11 @@
       <div class="container" id="content">
         {{#resume.basics}}
         <section class="row" id="contact">
-          <div class="col-sm-4 col-md-3">
+          <div class="col-sm-4 col-md-3 section-heading">
             <h2>Contact</h2>
           </div>
           <div class="col-sm-8 col-md-9">
-            <div class="row row-cols-1 row-cols-sm-2">
+            <div class="row row-cols-1 row-cols-sm-3">
             {{#email}}
             <div class="col contact">
               <strong>Email</strong>
@@ -85,7 +85,7 @@
           </div>
         </section>
         <section id="about" class="row">
-          <div class="col-sm-4 col-md-3">
+          <div class="col-sm-4 col-md-3 section-heading">
             <h2>About</h2>
           </div>
           <div class="col-sm-8 col-md-9 lead about">
@@ -175,7 +175,7 @@
         {{#resume.basics}}
         {{#if profiles.length}}
         <section id="profiles" class="row">
-          <div class="col-sm-4 col-md-3">
+          <div class="col-sm-4 col-md-3 section-heading">
             <h2>Profiles</h2>
           </div>
           <div class="col-sm-8 col-md-9">
@@ -214,41 +214,41 @@
 
         {{#if resume.work.length}}
         <section id="employment" class="row">
-          <div class="col-sm-4 col-md-3">
+          <div class="col-sm-4 col-md-3 section-heading">
             <h2>Employment</h2>
           </div>
           <div class="col-sm-8 col-md-9">
             <div class="row row-cols-1">
             {{#each resume.work}}
-            <div class="col section-item work">
-              <h3 class="strike-through">
-                <span>{{company}}</span>
-                <span class="date">
-                  {{startDate}} — {{#endDate}}{{.}}{{else}}Present{{/endDate}}
-                </span>
-              </h3>
-              {{#website}}
-              <div class="website">
-                <a href="{{.}}">{{.}}</a>
+              <div class="col section-item work {{#if printHide}}d-print-none{{/if}}">
+                <h3 class="strike-through">
+                  <span>{{company}}</span>
+                  <span class="date">
+                    {{startDate}} — {{#endDate}}{{.}}{{else}}Present{{/endDate}}
+                  </span>
+                </h3>
+                {{#website}}
+                <div class="website">
+                  <a href="{{.}}">{{.}}</a>
+                </div>
+                {{/website}}
+                {{#position}}
+                <div class="position">
+                  {{.}}
+                </div>
+                {{/position}}
+                {{#summary}}
+                <div class="summary lead">{{{markdown this}}}</div>
+                {{/summary}}
+                {{#if highlights.length}}
+                {{#if summary}}<div class="h4 d-print-none">Highlights</div>{{/if}}
+                <ul class="list-fancy highlights">
+                  {{#highlights}}
+                  <li>{{{markdown this}}}</li>
+                  {{/highlights}}
+                </ul>
+                {{/if}}
               </div>
-              {{/website}}
-              {{#position}}
-              <div class="position">
-                {{.}}
-              </div>
-              {{/position}}
-              {{#summary}}
-              <div class="summary lead">{{{markdown this}}}</div>
-              {{/summary}}
-              {{#if highlights.length}}
-              <div class="h4">Highlights</div>
-              <ul class="list-fancy highlights">
-                {{#highlights}}
-                <li>{{{markdown this}}}</li>
-                {{/highlights}}
-              </ul>
-              {{/if}}
-            </div>
             {{/each}}
             </div>
           </div>
@@ -257,57 +257,61 @@
 
         {{#if resume.projects.length}}
         <section id="projects" class="row">
-          <div class="col-sm-4 col-md-3">
+          <div class="col-sm-4 col-md-3 section-heading">
             <h2>Projects</h2>
           </div>
           <div class="col-sm-8 col-md-9">
             <div class="row row-cols-1">
             {{#each resume.projects}}
-            <div class="col section-item project">
-              <h3 class="strike-through">
-                <span>{{entity}}</span>
-                <span class="date">
-                  {{startDate}} — {{#endDate}}{{.}}{{else}}Present{{/endDate}}
-                </span>
-              </h3>
-              {{#url}}
-              <div class="url">
-                <a href="{{.}}">{{.}}</a>
-              </div>
-              {{/url}}
-              {{#name}}
-              <div class="name">
-                <span class="type">{{../type}}</span> – {{.}}
-              </div>
-              {{/name}}
-              {{#description}}
-              <div class="summary lead">
-                {{{markdown this}}}
-              </div>
-              {{/description}}
-              <div class="row row-cols-2">
-                {{#if highlights.length}}
-                <div class="col">
-                  <div class="h4">Highlights</div>
-                  <ul class="list-fancy highlights">
-                    {{#highlights}}
-                    <li>{{{markdown this}}}</li>
-                    {{/highlights}}
-                  </ul>
+              <div class="col section-item project {{#if printHide}}d-print-none{{/if}}">
+                <h3 class="strike-through">
+                  <span>{{entity}}</span>
+                  <span class="date">
+                    {{startDate}} — {{#endDate}}{{.}}{{else}}Present{{/endDate}}
+                  </span>
+                </h3>
+                {{#url}}
+                <div class="url">
+                  <a href="{{.}}">{{.}}</a>
                 </div>
-                {{/if}}
-                {{#if roles.length}}
-                <div class="col">
-                  <div class="h4">Roles</div>
-                  <ul class="list-fancy roles">
-                    {{#roles}}
-                    <li>{{{markdown this}}}</li>
-                    {{/roles}}
-                  </ul>
+                {{/url}}
+                {{#name}}
+                <div class="name">
+                  <span class="type">{{../type}}</span> – {{.}}
                 </div>
-                {{/if}}
+                {{/name}}
+                {{#description}}
+                <div class="summary lead">
+                  {{{markdown this}}}
+                </div>
+                {{/description}}
+                <div class="row row-cols-2">
+                  {{#if highlights.length}}
+                  <div class="col">
+                    {{#if description}}
+                    <div class="h4">Highlights</div>
+                    {{else}}
+                    {{#if roles}}<div class="h4">Highlights</div>{{/if}}
+                    {{/if}}
+                    <ul class="list-fancy highlights">
+                      {{#highlights}}
+                      <li>{{{markdown this}}}</li>
+                      {{/highlights}}
+                    </ul>
+                  </div>
+                  {{/if}}
+                  {{#if roles.length}}
+                  <div class="col">
+                    <div class="h4">Roles</div>
+                    <ul class="list-fancy roles">
+                      {{#roles}}
+                      <li>{{{markdown this}}}</li>
+                      {{/roles}}
+                    </ul>
+                  </div>
+                  {{/if}}
+                </div>
               </div>
-            </div>
             {{/each}}
             </div>
           </div>
@@ -316,43 +320,43 @@
 
         {{#if resume.volunteer.length}}
         <section id="volunteering" class="row">
-          <div class="col-sm-4 col-md-3">
+          <div class="col-sm-4 col-md-3 section-heading">
             <h2>Volunteering</h2>
           </div>
           <div class="col-sm-8 col-md-9">
             <div class="row row-cols-1">
             {{#each resume.volunteer}}
-            <div class="col section-item volunteer">
-              <h3 class="strike-through">
-                <span>{{organization}}</span>
-                <span class="date">
-                  {{startDate}} — {{#endDate}}{{.}}{{else}}Present{{/endDate}}
-                </span>
-              </h3>
-              {{#website}}
-              <div class="website">
-                <a href="{{.}}">{{.}}</a>
+              <div class="col section-item volunteer {{#if printHide}}d-print-none{{/if}}">
+                <h3 class="strike-through">
+                  <span>{{organization}}</span>
+                  <span class="date">
+                    {{startDate}} — {{#endDate}}{{.}}{{else}}Present{{/endDate}}
+                  </span>
+                </h3>
+                {{#website}}
+                <div class="website">
+                  <a href="{{.}}">{{.}}</a>
+                </div>
+                {{/website}}
+                {{#position}}
+                <div class="position">
+                  {{.}}
+                </div>
+                {{/position}}
+                {{#summary}}
+                <div class="summary lead">
+                  {{{markdown this}}}
+                </div>
+                {{/summary}}
+                {{#if highlights.length}}
+                {{#if summary}}<div class="h4 d-print-none">Highlights</div>{{/if}}
+                <ul class="list-fancy highlights">
+                  {{#highlights}}
+                  <li>{{{markdown this}}}</li>
+                  {{/highlights}}
+                </ul>
+                {{/if}}
               </div>
-              {{/website}}
-              {{#position}}
-              <div class="position">
-                {{.}}
-              </div>
-              {{/position}}
-              {{#summary}}
-              <div class="summary lead">
-                {{{markdown this}}}
-              </div>
-              {{/summary}}
-              {{#if highlights.length}}
-              <div class="h4">Highlights</div>
-              <ul class="list-fancy highlights">
-                {{#highlights}}
-                <li>{{{markdown this}}}</li>
-                {{/highlights}}
-              </ul>
-              {{/if}}
-            </div>
             {{/each}}
             </div>
           </div>
@@ -361,38 +365,38 @@
 
         {{#if resume.education.length}}
         <section id="education" class="row">
-          <div class="col-sm-4 col-md-3">
+          <div class="col-sm-4 col-md-3 section-heading">
             <h2>Education</h2>
           </div>
           <div class="col-sm-8 col-md-9">
             <div class="row row-cols-1">
             {{#each resume.education}}
-            <div class="col section-item education">
-              <h3 class="strike-through">
-                <span>{{institution}}</span>
-                <span class="date">
-                  {{startDate}} — {{#endDate}}{{.}}{{else}}Present{{/endDate}}
-                </span>
-              </h3>
-              {{#area}}
-              <div class="area">
-                {{.}}
+              <div class="col section-item education {{#if printHide}}d-print-none{{/if}}">
+                <h3 class="strike-through">
+                  <span>{{institution}}</span>
+                  <span class="date">
+                    {{startDate}} — {{#endDate}}{{.}}{{else}}Present{{/endDate}}
+                  </span>
+                </h3>
+                {{#area}}
+                <div class="area">
+                  {{.}}
+                </div>
+                {{/area}}
+                {{#studyType}}
+                <div class="studyType">
+                  {{.}}
+                </div>
+                {{/studyType}}
+                {{#if courses.length}}
+                <h3>Courses</h3>
+                <ul class="list-fancy courses">
+                  {{#courses}}
+                  <li>{{.}}</li>
+                  {{/courses}}
+                </ul>
+                {{/if}}
               </div>
-              {{/area}}
-              {{#studyType}}
-              <div class="studyType">
-                {{.}}
-              </div>
-              {{/studyType}}
-              {{#if courses.length}}
-              <h3>Courses</h3>
-              <ul class="list-fancy courses">
-                {{#courses}}
-                <li>{{.}}</li>
-                {{/courses}}
-              </ul>
-              {{/if}}
-            </div>
             {{/each}}
             </div>
           </div>
@@ -401,34 +405,36 @@
 
         {{#if resume.awards.length}}
         <section id="awards" class="row">
-          <div class="col-sm-4 col-md-3">
+          <div class="col-sm-4 col-md-3 section-heading">
             <h2>Awards</h2>
           </div>
           <div class="col-sm-8 col-md-9">
             <div class="row row-cols-1">
             {{#each resume.awards}}
-            <div class="col section-item award">
-              <h3 class="strike-through">
-                <span>{{title}}</span>
-              </h3>
-              {{#date}}
-              <div class="date">
-                <em>Awarded</em>
-                {{.}}
+              <div class="col section-item award {{#if printHide}}d-print-none{{/if}}">
+                <h3 class="strike-through">
+                  <span>{{title}}</span>
+                </h3>
+                <div class="award-details">
+                  {{#date}}
+                  <span class="date">
+                  <em>Awarded</em>
+                  {{.}}
+                  </span>
+                  {{/date}}
+                  {{#awarder}}
+                  <span class="awarder">
+                    <em>by</em>
+                    <strong>{{.}}</strong>
+                  </span>
+                  {{/awarder}}
+                </div>
+                {{#summary}}
+                <div class="summary lead">
+                  {{{markdown this}}}
+                </div>
+                {{/summary}}
               </div>
-              {{/date}}
-              {{#awarder}}
-              <div class="awarder">
-                <em>by</em>
-                <strong>{{.}}</strong>
-              </div>
-              {{/awarder}}
-              {{#summary}}
-              <div class="summary lead">
-                {{{markdown this}}}
-              </div>
-              {{/summary}}
-            </div>
             {{/each}}
             </div>
           </div>
@@ -437,36 +443,36 @@
 
         {{#if resume.publications.length}}
         <section id="publications" class="row">
-          <div class="col-sm-4 col-md-3">
+          <div class="col-sm-4 col-md-3 section-heading">
             <h2>Publications</h2>
           </div>
           <div class="col-sm-8 col-md-9">
             <div class="row row-cols-1">
             {{#each resume.publications}}
-            <div class="col section-item publication">
-              <h3 class="strike-through">
-                <span>{{name}}</span>
-                <span class="date">
-                  {{releaseDate}}
-                </span>
-              </h3>
-              {{#website}}
-              <div class="website">
-                <a href="{{.}}"></a>
+              <div class="col section-item publication {{#if printHide}}d-print-none{{/if}}">
+                <h3 class="strike-through">
+                  <span>{{name}}</span>
+                  <span class="date">
+                    {{releaseDate}}
+                  </span>
+                </h3>
+                {{#website}}
+                <div class="website">
+                  <a href="{{.}}"></a>
+                </div>
+                {{/website}}
+                {{#publisher}}
+                <div class="publisher">
+                  <em>Published by</em>
+                  <strong>{{.}}</strong>
+                </div>
+                {{/publisher}}
+                {{#summary}}
+                <div class="summary lead">
+                  {{{markdown this}}}
+                </div>
+                {{/summary}}
               </div>
-              {{/website}}
-              {{#publisher}}
-              <div class="publisher">
-                <em>Published by</em>
-                <strong>{{.}}</strong>
-              </div>
-              {{/publisher}}
-              {{#summary}}
-              <div class="summary lead">
-                {{{markdown this}}}
-              </div>
-              {{/summary}}
-            </div>
             {{/each}}
             </div>
           </div>
@@ -475,26 +481,26 @@
 
         {{#if resume.skills.length}}
         <section id="skills" class="row">
-          <div class="col-sm-4 col-md-3">
+          <div class="col-sm-4 col-md-3 section-heading">
             <h2>Skills</h2>
           </div>
           <div class="col-sm-8 col-md-9">
             <div class="row row-cols-1 row-cols-sm-2">
             {{#each resume.skills}}
-            <div class="col section-item skill">
-              {{#name}}
-              <div class="name">
-                <h3>{{.}}</h3>
+              <div class="col section-item skill">
+                {{#name}}
+                <div class="name">
+                  <h3>{{.}}</h3>
+                </div>
+                {{/name}}
+                {{#if keywords.length}}
+                <ul class="list-fancy keywords">
+                  {{#keywords}}
+                  <li>{{{markdown this}}}</li>
+                  {{/keywords}}
+                </ul>
+                {{/if}}
               </div>
-              {{/name}}
-              {{#if keywords.length}}
-              <ul class="list-fancy keywords">
-                {{#keywords}}
-                <li>{{{markdown this}}}</li>
-                {{/keywords}}
-              </ul>
-              {{/if}}
-            </div>
             {{/each}}
             </div>
           </div>
@@ -503,24 +509,24 @@
 
         {{#if resume.languages.length}}
         <section id="languages" class="row">
-          <div class="col-sm-4 col-md-3">
+          <div class="col-sm-4 col-md-3 section-heading">
             <h2>Languages</h2>
           </div>
           <div class="col-sm-8 col-md-9">
             <div class="row row-cols-1 row-cols-sm-2">
             {{#each resume.languages}}
-            <div class="col">
-              {{#language}}
-              <div class="language">
-                <strong>{{.}}</strong>
+              <div class="col {{#if printHide}}d-print-none{{/if}}">
+                {{#language}}
+                <div class="language">
+                  <strong>{{.}}</strong>
+                </div>
+                {{/language}}
+                {{#fluency}}
+                <div class="fluency">
+                  {{.}}
+                </div>
+                {{/fluency}}
               </div>
-              {{/language}}
-              {{#fluency}}
-              <div class="fluency">
-                {{.}}
-              </div>
-              {{/fluency}}
-            </div>
             {{/each}}
             </div>
           </div>
@@ -529,26 +535,26 @@
 
         {{#if resume.interests.length}}
         <section id="interests" class="row">
-          <div class="col-sm-4 col-md-3">
+          <div class="col-sm-4 col-md-3 section-heading">
             <h2>Interests</h2>
           </div>
           <div class="col-sm-8 col-md-9">
             <div class="row row-cols-1 row-cols-sm-2">
             {{#each resume.interests}}
-            <div class="col">
-              {{#name}}
-              <div class="name">
-                <h3>{{.}}</h3>
+              <div class="col {{#if printHide}}d-print-none{{/if}}">
+                {{#name}}
+                <div class="name">
+                  <h3>{{.}}</h3>
+                </div>
+                {{/name}}
+                {{#if keywords.length}}
+                <ul class="list-fancy keywords">
+                  {{#keywords}}
+                  <li>{{.}}</li>
+                  {{/keywords}}
+                </ul>
+                {{/if}}
               </div>
-              {{/name}}
-              {{#if keywords.length}}
-              <ul class="list-fancy keywords">
-                {{#keywords}}
-                <li>{{.}}</li>
-                {{/keywords}}
-              </ul>
-              {{/if}}
-            </div>
             {{/each}}
             </div>
           </div>
@@ -557,26 +563,26 @@
 
         {{#if resume.references.length}}
         <section id="references" class="row">
-          <div class="col-sm-4 col-md-3">
+          <div class="col-sm-4 col-md-3 section-heading">
             <h2>References</h2>
           </div>
           <div class="col-sm-8 col-md-9">
             <div class="row row-cols-1">
             {{#each resume.references}}
-            <div class="col">
-              {{#if reference}}
-              <blockquote class="blockquote">
-                <div class="reference">
-                {{{markdown reference}}}
-                </div>
-                {{#name}}
-                <footer class="blockquote-footer">
-                  {{.}}
-                </footer>
-                {{/name}}
-              </blockquote>
-              {{/if}}
-            </div>
+              <div class="col">
+                {{#if reference}}
+                <blockquote class="blockquote">
+                  <div class="reference">
+                  {{{markdown reference}}}
+                  </div>
+                  {{#name}}
+                  <footer class="blockquote-footer">
+                    {{.}}
+                  </footer>
+                  {{/name}}
+                </blockquote>
+                {{/if}}
+              </div>
             {{/each}}
             </div>
           </div>

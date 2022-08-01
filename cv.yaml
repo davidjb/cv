@@ -169,6 +169,7 @@ work:
     position: System Administrator, Discipline of Information Technology
     endDate: '2011-05-01'
     startDate: '2010-01-01'
+    printHide: true
     summary: >
       Application development and deployment of tools to support students,
       staff and researchers in for day-to-day operations, data storage and
@@ -188,6 +189,7 @@ work:
     position: Project Officer, School of Mathematics, Physics and IT
     endDate: '2009-12-31'
     startDate: '2008-12-03'
+    printHide: true
     summary: >
       Part of the School's IT support team, the role involved the creation and
       maintenance of software platforms to support day-to-day operations as
@@ -203,6 +205,7 @@ work:
     position: APAC Project Assistant
     endDate: '2008-12-02'
     startDate: '2007-09-17'
+    printHide: true
     summary: >
       The Australian Researcher Enabling Environment (ARCHER) project produced
       dedicated software tools for researchers to collect, store and securely
@@ -257,6 +260,7 @@ projects:
     name: Local & national
     #endDate
     startDate: '2016'
+    printHide: true
     highlights:
       - "ABC National News & Radio (2018-07-18): My Health Record"
       - "ABC Local Radio (2016): Townsville Startup Weekend"
@@ -270,6 +274,7 @@ projects:
     url: https://foodrescuetownsville.com/
     endDate: '2016-07-12'
     startDate: '2016-06-13'
+    printHide: true
     highlights:
       - Open source software review & testing
       - Presentation preparation & delivery
@@ -318,6 +323,7 @@ awards:
   - awarder: Advance Queensland
     date: '2016-06-01'
     title: Community Digital Champion
+    printHide: true
     summary: >
       Chosen as a Digital Champion for work in the digital and entrepreneurship
       spaces to share knowledge and experiences with the local community
@@ -325,6 +331,7 @@ awards:
   - awarder: James Cook University
     date: '2013-12-01'
     title: Staff Excellence Award
+    printHide: true
     summary: >
       Awarded for lead development of the [JCU Research
       Portfolio](https://jcu.me), an interactive web profile for all
@@ -388,6 +395,7 @@ volunteer:
     website: https://www.youngictexplorers.net.au/
     endDate: '2019-12-31'
     startDate: '2015-09-01'
+    printHide: true
     position: Age Category Judge
     summary: >
       Non-profit competition encouraging school students to create their best
@@ -401,6 +409,7 @@ volunteer:
     website: http://www.mixhaus.com.au
     endDate: '2016-12-31'
     startDate: '2015-12-16'
+    printHide: true
     position: Volunteer
     highlights:
       - Construction of the MixHaus mobile makerspace (shipping container)
@@ -429,6 +438,7 @@ volunteer:
     website: http://www.scientistsinschools.edu.au/ict/
     endDate: '2017-01-01'
     startDate: '2015-10-01'
+    printHide: true
     position: St Margaret Mary's College
     highlights:
       - Volunteer IT professional in school
@@ -449,6 +459,7 @@ interests:
       - Web development
       - Innovation & startups
   - name: Personal
+    printHide: true
     keywords:
       - Rose gardening
       - Home DIY
