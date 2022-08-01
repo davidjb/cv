@@ -32,11 +32,11 @@ basics:
       username: '@davidjb_'
 
   summary: |
-    David is a technologist, full-stack web developer and project manager, specialising in open source and customised applications.  With a client-driven focus, David applies specialised knowledge of web technologies and IT security to his work, including frontend and backend development, UI & UX design, system administration, operations and end-user support.
+    David is a technologist, full-stack web developer and project manager, specialising in open source and customised applications. With a client-driven focus, David applies detailed knowledge of web technologies and IT security to his work: frontend/backend development, UI & UX design, system administration, operations and end-user support.
 
-    He is passionate about users, accessibility, creating engaging user experiences (UX), open source, Python, JavaScript and Linux. His experience extends to other languages and aspects of technology, enthusiastically investigating and adapting to unseen (and challenging) IT & development environments.
+    His passions are users, accessibility, engaging user experiences (UX), open source, Python, JavaScript and Linux. His experience extends to various other languages and technologies, enthusiastically investigating and adapting to unseen (and challenging) IT environments.
 
-    David's personal strengths are his attention to detail, adaptability and initiative, holistic approach to problem solving and professional integrity.  He believes in openness and honesty, advocating for users and fostering communities around information technology; he is an organiser of a regional developers' group and actively maintains and contributes to open source software.
+    David's personal strengths are his attention to detail, adaptability and initiative, problem solving ability, ability to communicate  and professional integrity.  He believes in openness and honesty, advocating for users and fostering communities; he is an organiser of a regional developers' group and actively maintains/contributes to open source software.
 
     He once recovered a very expensive electron microscope by restoring an ancient Solaris hard drive bit-by-bit (literally), has hiked islands and the outback to install technology and programmed and debugged live underwater electronics.
 skills:
@@ -93,9 +93,8 @@ skills:
 work:
   - company: DavidJB Consulting
     website: https://davidjb.com
-    position: Proprietor
     #endDate:
-    startDate: '2016-06-01'
+    startDate: '2016'
     highlights:
       - Independent IT project consulting
       - Security research and vulnerability reporting
@@ -109,14 +108,13 @@ work:
     #endDate:
     startDate: '2014-05-31'
     summary: >
-      Development & operations of web applications; administrator of systems
-      for researchers, research projects, University community and the public.
-      Lead developer, project manager, security and technical consultant for
-      research and corporate enterprise, with a focus on UX design and
-      delivering engaging experiences through the creation of user-friendly
-      tools. Platforms are primarily built in JavaScript (React, Express) and
-      Python (Django, Pyramid, Bottle, Flask), but also PHP, Shell and
-      associated appropriate technologies.
+      Development & administrator of web applications for researchers, research
+      projects, University community and the public.  Lead developer, project
+      manager, security and technical consultant for research and corporate
+      enterprise, with a focus on UX and delivering engaging experiences by
+      creating user-friendly tools. Platforms primarily built in JavaScript
+      (React, Express) and Python (Django, Pyramid, Bottle, Flask), but also
+      PHP, Shell and other technologies.
     highlights:
       - >
         Lead developer of core University projects, including
@@ -124,10 +122,11 @@ work:
         [ORCID iD Linker](https://research.jcu.edu.au/orcid-link),
         [Research@JCU](https://research.jcu.edu.au),
         [JCU Journals](https://journals.jcu.edu.au)
-      - System administrator & project lead for technical operations of eResearch Centre
+      - System administrator & technical operations lead, eResearch Centre
       - Project manager & maintainer of [JCU Advanced Standing Credit Portal](https://getcredit.jcu.edu.au)
       - Maintainer and lead of [open source projects](https://github.com/jcu-eresearch), including [Nginx Shibboleth integration](https://github.com/nginx-shib/nginx-http-shibboleth)
       - Creator of the [JCU CookBook](https://cookbook.jcu.io) and [JCU Content Distribution Network (CDN)](https://cdn.jcu.edu.au)
+      - Operator/implementer of [automated status monitoring tools](https://status-cloud.jcu.io/)
       - Supervision & mentoring of project staff, tertiary/work experience students
       - Member of University's Change Advisory Board (CAB); Equity Contact Officer (ECO); Mental Health Working Group
       - Technical representative for [ORCID](https://orcid.org) and [Australian ORCID consortium](https://aaf.edu.au/orcid/)
@@ -145,21 +144,20 @@ work:
     endDate: '2014-05-31'
     startDate: '2011-05-02'
     summary: >
-      System administrator with a core focus on delivering services to
-      Australian researchers in sectors such as medicine, biodiversity, climate
-      change, and agriculture. Bespoke web application and micro-service
-      creation for research projects, University departments and individual
-      researchers' work. Platforms primarily built in Python (Pyramid, Plone),
-      frontend mapping libraries (Leaflet/OpenLayers) and associated web
-      technologies.
+      System administrator delivering services to Australian researchers in
+      areas such as medicine, biodiversity, climate change, and agriculture.
+      Bespoke web application and micro-service creation for research projects,
+      University departments and individual researchers' work. Platforms
+      primarily built in Python (Pyramid, Plone), frontend mapping libraries
+      (Leaflet/OpenLayers) and web technologies.
     highlights:
       - Project manager and developer of [eSpaces.edu.au](https://espaces.edu.au) – collaborative workspaces with federated access to all researchers from Australia and New Zealand
       - Project manager and developer of [ACCLAiM](https://acclaim.edu.au) – secure medical examiner portal
       - DevOps for secure portals including Cyclone Testing Station and [Tropical Data Hub](https://tropicaldatahub.org)
-      - Installation and customisation of [JCU Journals](https://journals.jcu.edu.au) (international journal hosting) in partnership with JCU Library
-      - Creation of University-wide feedback application (_JCU Words_ word cloud generator)
+      - Installation and customisation of [JCU Journals](https://journals.jcu.edu.au) (research journal hosting)
+      - Creation of University-wide feedback application
       - >
-        Creation of bespoke research tools:
+        Creation of research tools:
         [AgMudmap.org](https://web.archive.org/web/20180903030036/https://agmudmap.org/),
         [TerrestrialClimateChange.org.au](https://web.archive.org/web/20200518020905/https://terrestrialclimatechange.org.au/),
         [IUCN Climate Change Specialist Group](https://web.archive.org/web/20200518020840/https://iucn-ccsg.org/)
@@ -257,7 +255,6 @@ projects:
 
   - type: presentation
     entity: Media appearances
-    name: Local & national
     #endDate
     startDate: '2016'
     printHide: true
@@ -288,37 +285,32 @@ awards:
     date: '2019-10-22'
     title: TropEco Sustainable Campuses Award
     summary: >
-      For development and implementation of an e-waste recovery strategy after
-      significant value was identified in e-waste that was previously sent for
-      recycling.  A systematic process was developed at the university level to
-      ensure recovered equipment is repurposed by staff, students and community
-      groups resulting in over $12,000 of equipment recovered and reused to
-      date. Also received a Highly Commended _TropEco Excellence Award – Staff_
-      for the same project.
+      For development and implementation of an e-waste recovery strategy and
+      process after significant value was identified in e-waste that was
+      previously sent for recycling. Equipment worth over $12,000 was saved for
+      staff, students and community group usage. Received Highly Commended
+      _TropEco Excellence Award – Staff_ for the same project.
 
   - awarder: TropEco, James Cook University
     date: '2019-10-22'
     title: Green Impact – Highest Scoring Team
     summary: >
-      Team OIC (Oh, I Compost) successfully re-purposed discarded e-waste,
-      acquired a team bicycle to get around on campus, shared home-grown
-      produce between staff members, greatly improved their area’s recycling,
-      including producing a [highly motivational
-      video](https://youtu.be/9JLb91c4Lww) on putting the right thing in the
-      right bin.
+      Team successfully re-purposed discarded e-waste, acquired a team bicycle
+      to get around on campus, shared home-grown produce between staff members,
+      greatly improved their area’s recycling, including producing a [highly
+      motivational video](https://youtu.be/9JLb91c4Lww) on correct bin usage.
 
   - awarder: Division of Student Life, James Cook University
     date: '2018-12-01'
     title: Friends of Student Life Award
     summary: >
-      The JCU Credit Calculator offers students the ability to receive credit
-      (advanced standing) for studies completed at other institutions. The
-      previous version of this software was hard to use, required days of
-      manual data entry by administrators and was inordinately expensive. The
-      eResearch Centre built a modern React-based, fit-for-purpose tool that
-      automatically integrates with other University systems, delivering a
-      flowing, engaging user experience – built and delivered for less than a
-      tenth of the cost of running the previous system for a single year.
+      The _JCU Credit Calculator_ allows students to request credit (advanced
+      standing) for studies completed elsewhere. The previous system was hard
+      to use, required weeks of data entry each year & was cost-prohibitive.
+      The eResearch Centre built a modern React-based, fit-for-purpose tool
+      that automatically integrates with other systems, delivering a simple,
+      engaging user experience – costing less than 10% of the previous yearly
+      fees.
 
   - awarder: Advance Queensland
     date: '2016-06-01'
