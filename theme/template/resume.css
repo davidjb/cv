@@ -107,20 +107,19 @@ h3 span:first-child {
 .strike-through span:first-child {
   padding-right: 1rem;
 }
+
 .strike-through span + span {
-  display: block;
-  margin-bottom: 0.5rem;
-  font-size: 1.5rem;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  font-size: 0.8rem;
+  margin-bottom: 0;
+  padding-left: 1rem;
 }
 
 @media (min-width: 768px) {
   .strike-through span + span {
-    display: inline-block;
-    position: absolute;
-    right: 0;
-    font-size: 0.8rem;
-    margin-bottom: 0;
-    padding-left: 1rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -147,7 +146,8 @@ h3 span:first-child {
 }
 
 .postnominals {
-  font-size: 60%;
+  font-size: 50%;
+  font-weight: normal;
 }
 
 .contact,
